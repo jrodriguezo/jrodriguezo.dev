@@ -8,11 +8,13 @@ function App() {
   return (
     <div className="bg-yellow-js text-black-js min-h-screen">
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/blog/fitness' element={<Fitness />}></Route>
-        <Route path='*' element={<h1>Page not found</h1>}></Route>
-      </Routes>
+      <div className='bg-black-js'>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/blog/fitness' element={<Fitness />}></Route>
+          <Route path='*' element={<h1>Page not found</h1>}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
