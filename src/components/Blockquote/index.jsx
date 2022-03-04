@@ -11,7 +11,22 @@ export default function Blockquote() {
         },
         {
             "author": "Jeff Bezos",
-            "description": "Big things start small",
+            "description": "Big things start small.",
+            "time": 5
+        },
+        {
+            "author": "Gene Kranz",
+            "description": "Failure is not an option.",
+            "time": 5
+        },
+        {
+            "author": "Victor Küppers",
+            "description": "Eres lo que transmites.",
+            "time": 5
+        },
+        {
+            "author": "Unknown",
+            "description": "Imagine the impossible and then do it.",
             "time": 5
         },
         {
