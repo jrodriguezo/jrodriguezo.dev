@@ -11,7 +11,7 @@ export default function Home() {
 
     return(
         <div>
-        <div className="bg-yellow-js flex min-h-screen text-center">
+        <div className="bg-yellow-js text-black-js flex min-h-screen text-center">
             <div className="m-auto">
                 <div className="font-extrabold text-7xl">
                     Frontend Developer
@@ -28,7 +28,7 @@ export default function Home() {
                         
                 </div>
                 <div className='absolute inset-x-0 bottom-0 p-10'>
-                    <a href="https://github.com/jrodriguezo" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a className="hover:opacity-60 font-semibold" href="https://github.com/jrodriguezo" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
                         Jesús Rodríguez Ovejero
                     </div>
                     <div className="text-2xl my-10">
-                            <p>I'm <strong>telecommunications engineer</strong> specialized in Computer Science. 
+                            <p>I'm <strong className='text-green-rick-morty'>telecommunications engineer</strong> specialized in Computer Science. 
                             Addicted to improve with enthusiasm every day. 
                             Lovin' code random stuffs with a minimalist design.
                             Restless to find perfection. Willing to face any challenge.</p>      
@@ -90,7 +90,7 @@ export default function Home() {
                     </div>
  
                     <footer className='text-yellow-rick-morty text-sm italic  opacity-70'>
-                        *If you would like to collaborate with me, send me a pull request or <a href='#contact' className='font-bold hover:opacity-90'>contact</a> with me in some way.
+                        *If you'd like to collaborate, feels free to send me a pull request or <a href='#contact' className='font-bold hover:opacity-90'>contact</a> with me in some way.
                     </footer>
                 </div>
                 <div className='flex-col hidden md:block'>
