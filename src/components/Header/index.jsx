@@ -7,6 +7,7 @@ export default function Header() {
             <Link className="link" to="/">jrodriguezo.dev</Link>
             <div>
                   <a className="mr-8" href="#about">About</a>
+                  <a className="mr-8" href="#blogs">Blogs</a>
                   <Link className="mr-8" to="/blog/fitness">Projects</Link>
                   <Link to="/blog/fitness">Blogs</Link>
             </div>

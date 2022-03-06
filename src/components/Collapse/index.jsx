@@ -22,11 +22,11 @@ function Collapse({buttonText}) {
 
   return (
     <div>
-        <Button children={buttonText} onClick={handleClick} />
+        <Button text={buttonText} color="bg-green-rick-morty hover:opacity-70" onClick={handleClick} />
         {visibility &&                            
             <ul className="my-8 pl-10">
-                <Box year="2015-2019 (4 years)" title="Bachelor of Engineering in Telecommunication Technologies and Services Engineering (BETTS)" />
                 <Box year="2020-2021 (2 years)" title="Master of Science in Telecommunication Engineering" />
+                <Box year="2015-2019 (4 years)" title="Bachelor of Engineering in Telecommunication Technologies and Services Engineering (BETTS)" />
             </ul>}
     </div>
   )

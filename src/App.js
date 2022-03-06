@@ -3,6 +3,7 @@ import Fitness from './pages/Fitness/index';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='*' element={<h1>Page not found</h1>}></Route>
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

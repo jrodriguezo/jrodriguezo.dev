@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Button({children, onClick, ...props}) {
+function Button({text, color, onClick, ...props}) {
   return (
     <button 
-        className="text-darkness bg-green-rick-morty hover:bg-green-darkness-rick-morty font-bold py-2 px-4 rounded-full"
+        className={`${color} text-darkness font-bold py-2 px-4 rounded-full text-center`}
         onClick={onClick}>
-            {children}
+            {text}
     </button>
   )
 }

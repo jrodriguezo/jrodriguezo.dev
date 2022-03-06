@@ -3,6 +3,8 @@ import Collapse from '../../components/Collapse'
 import TypeAnimation from 'react-type-animation'
 import {FaRegHeart} from 'react-icons/fa'
 import './styles.css'
+import { Link } from 'react-router-dom'
+import Button from '../../components/Button'
 
 
 export default function Home() {
@@ -25,12 +27,15 @@ export default function Home() {
                         </div>
                         
                 </div>
+                <div className='absolute inset-x-0 bottom-0 p-10'>
+                    <a href="https://github.com/jrodriguezo" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
             </div>
         </div>
         <section>
-            <div id="about" className="flex justify-center items-center min-h-screen mb-40">
-                <div className='flex-col'>
-                    <img  src="./assets/images/rick.png" alt="rick"/>
+            <div id="about" className="flex justify-center items-center py-10">
+                <div className='flex-col hidden md:block'>
+                    <img src="./assets/images/rick.png" alt="rick"/>
                 </div>
                 <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl rounded-xl">
                     <div className="font-extrabold text-7xl text-center">
@@ -48,7 +53,8 @@ export default function Home() {
                     <Collapse buttonText="+ qualifications"/>
                 </div>
             </div>
-            <div id="philosophy" className="bg-black-js text-green-rick-morty">
+            {/*
+                <div id="philosophy" className="bg-black-js text-green-rick-morty">
                     <div className='flex justify-center items-center'>
                         <div className="flex-auto w-1/2 font-extrabold text-7xl text-center px-4 my-10">
                             <p>π-losophy</p>
@@ -65,22 +71,29 @@ export default function Home() {
                         </div>
                     </div>
             </div>
-            <div id="about" className="flex justify-center items-center min-h-screen">
+            */}             
+            <div id="blogs" className="flex justify-center items-center">
                 <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl rounded-xl">
                     <div className="font-extrabold text-7xl text-center">
                         Blogs
                     </div>
                     <div className="text-xl text-center mt-2">
-                        written by me or collaborators<strong className='text-yellow-rick-morty'>*</strong>
+                        written by me or <strong className='text-yellow-rick-morty opacity-70'>collaborators*</strong>
                     </div>
-                    <div className="text-2xl my-10">
+                    <div className="text-2xl mt-10">
                             <p>Discover <strong className='text-yellow-rick-morty'>unique content</strong> on differents topics. Are you gonna miss it ?</p>    
                     </div>
-                    <footer className='text-yellow-rick-morty text-sm italic'>
-                        If you would like to collaborate with me, send me a pull request or contact with me.
+                    <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 p-10 mx-auto max-w-fit'>
+                        <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank" rel="noopener noreferrer">Fitness</Link>
+                        <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank" rel="noopener noreferrer">Philosophy</Link>
+                        <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank" rel="noopener noreferrer">Blockchain</Link>
+                    </div>
+ 
+                    <footer className='text-yellow-rick-morty text-sm italic  opacity-70'>
+                        *If you would like to collaborate with me, send me a pull request or <a href='#contact' className='font-bold hover:opacity-90'>contact</a> with me in some way.
                     </footer>
                 </div>
-                <div className='flex-col'>
+                <div className='flex-col hidden md:block'>
                     <img className='pl-10 ' src="./assets/images/morty.png" alt="rick"/>
                 </div>
             </div>
