@@ -1,5 +1,6 @@
 import React from "react";
-import Blockquote from "../../components/Blockquote";
+import Blockquote from "../Blockquote";
+import './style.css'
 
 function Philosophy() {
   return (
