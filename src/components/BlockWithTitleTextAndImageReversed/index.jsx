@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function BlockWithTitleTextAndImageReversed() {
+
+    const notClickable = false;
+
   return (
-    <div id="blogs" className="flex justify-star items-center py-10">
+    <div id="blogs" className="flex justify-star items-center py-10 pb-20">
     <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl rounded-xl mx-10 py-10">
         <div className="font-extrabold text-7xl text-center">
             Blogs
@@ -16,7 +19,7 @@ function BlockWithTitleTextAndImageReversed() {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 p-10 mx-auto max-w-fit'>
             <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Fitness</Link>
-            <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Blockchain</Link>
+            {notClickable  && <Link to="/blog/blockchain" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Blockchain</Link>}
         </div>
 
         <footer className='text-yellow-rick-morty text-sm italic opacity-70'>

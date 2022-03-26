@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Tittle({children}) {
+function Tittle({color = 'text-black-js', children}) {
   return (
-    <div className="font-extrabold text-7xl text-center">
+    <div className={`font-extrabold text-7xl text-center ${color}`}>
         {children}
     </div>
   )

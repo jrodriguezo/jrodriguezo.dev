@@ -3,7 +3,7 @@ import Collapse from '../Collapse'
 
 function BlockWithTitleTextAndImage() {
   return (
-    <div id="about" className="flex justify-end items-center py-10 mt-20">
+    <div id="about" className="flex justify-end items-center py-10 pt-20">
         <div className='flex-col hidden md:block'>
             <img className="max-h-96" src="./assets/images/rick.png" alt="rick"/>
         </div>
