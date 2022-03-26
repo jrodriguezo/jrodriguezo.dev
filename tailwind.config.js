@@ -12,6 +12,7 @@ module.exports = {
         'green-rick-morty': '#A3F7AE',
         'green-darkness-rick-morty': '#82C58B',
         'brown-rick-morty': '#D1AF90',
+        'gray-rick-morty': '#DDD8D2',
         'darkness': '#2D2D2D'
       }
     },

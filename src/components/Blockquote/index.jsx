@@ -64,7 +64,7 @@ export default function Blockquote() {
 
 
     return (
-        <div className="border-l-4 border-green-rick-morty pl-4">
+        <div className="border-l-4 border-blue-rick-morty pl-4">
             <span className='font-serif font-black text-8xl'>“</span>
             <p className='text-white font-extralight text-4xl'>{currentQuote.description}</p>
             <p className='text-2xl mt-4'>{currentQuote.author}</p>
