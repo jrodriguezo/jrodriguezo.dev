@@ -13,9 +13,9 @@ export default function Fitness() {
           <div className="mx-auto text-justify text-xl max-w-2xl mt-10">
             Because it's difficult to get out from our comfort zone. We are all
             time giving excuses and we don't focus on the important things for
-            getting muscular; train, sleep, eat and repeat. Moreover, the
-            society don't help due to "social activities", if you don't hang out
-            with your friends to take a beer it is considered a "strange person"
+            gainning muscle; train, sleep, eat and repeat. Moreover, the
+            society doesn't help too much due to "social activities", if you don't hang out
+            with your friends to take a beer it is considered like a "strange person"
             or also, the phrase "you're obsessed with".
           </div>
           <div class="mx-auto w-20 my-4 border-t-2 border-black-js"></div>
