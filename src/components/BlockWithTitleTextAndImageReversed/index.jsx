@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function BlockWithTitleTextAndImageReversed() {
   return (
-    <div id="blogs" className="flex justify-center items-center pt-10">
-    <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl rounded-xl">
+    <div id="blogs" className="flex justify-star items-center py-10">
+    <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl rounded-xl mx-10 py-10">
         <div className="font-extrabold text-7xl text-center">
             Blogs
         </div>
@@ -24,7 +24,7 @@ function BlockWithTitleTextAndImageReversed() {
         </footer>
     </div>
     <div className='flex-col hidden md:block'>
-        <img className='pl-10 ' src="./assets/images/morty.png" alt="rick"/>
+        <img className="max-h-96" src="./assets/images/morty.png" alt="rick"/>
     </div>
 </div>
   );

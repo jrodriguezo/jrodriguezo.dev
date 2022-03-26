@@ -5,6 +5,7 @@ import BlockWithTitleTextAndImage from '../../components/BlockWithTitleTextAndIm
 import Philosophy from '../Philosophy';
 import BlockWithTitleTextAndImageReversed from '../../components/BlockWithTitleTextAndImageReversed';
 
+import './styles.css'
 
 export default function Home() {
 
@@ -14,10 +15,13 @@ export default function Home() {
                 <Header />
                 <CoverPage />
             </div>
-            <section>
-                <BlockWithTitleTextAndImage />
-                <Philosophy />
-                <BlockWithTitleTextAndImageReversed />
+            <section className='sm:px-20'>
+                <div className='mx-auto md:bg-gray-rick-morty'>
+                    <BlockWithTitleTextAndImage />
+                    <Philosophy />
+                    <BlockWithTitleTextAndImageReversed />
+                </div>
+
             </section>
         </div>
     )
