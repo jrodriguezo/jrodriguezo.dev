@@ -19,7 +19,7 @@ function BlockWithTitleTextAndImageReversed() {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 p-10 mx-auto max-w-fit'>
             <Link to="/blog/fitness" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Fitness</Link>
-            {notClickable  && <Link to="/blog/blockchain" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Blockchain</Link>}
+            <Link to="/blog/blockchain" className="bg-yellow-rick-morty hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center" target="_blank">Blockchain</Link>
         </div>
 
         <footer className='text-yellow-rick-morty text-sm italic opacity-70'>
