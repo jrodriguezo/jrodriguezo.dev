@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Philosophy from './pages/Philosophy';
+import PageNotFound from './pages/Error';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
             <Route path='/' element={<Home />}></Route>
             <Route path='/blog/fitness' element={<Fitness />}></Route>
             <Route path='/blog/philosophy' element={<Philosophy />}></Route>
-            <Route path='*' element={<h1>Page not found</h1>}></Route>
+            <Route path='*' element={<PageNotFound/>}></Route>
           </Routes>
         <Footer />
     </div>
