@@ -3,11 +3,11 @@ import Collapse from '../Collapse'
 
 function BlockWithTitleTextAndImage() {
   return (
-    <div id="about" className="flex justify-end items-center xl:py-10 pt-10 xl:pt-20">
-        <div className='flex-col hidden xl:block'>
+    <div id="about" className="flex justify-end items-center pt-10 xl:pt-20">
+        <div className='flex-col hidden 2xl:block'>
             <img className="max-h-96" src="./assets/images/rick.png" alt="rick"/>
         </div>
-        <div className="flex-col bg-darkness text-white opacity-90 p-10 xl:p-20 shadow-lg shadow-darkness max-w-5xl xl:rounded-xl xl:mr-10">
+        <div className="flex-col bg-darkness text-white opacity-90 p-10 xl:p-20 shadow-lg shadow-darkness max-w-5xl xl:rounded-xl 2xl:mr-10">
             <div className="font-extrabold text-7xl text-center">
                 Who Am I ?
             </div>

@@ -6,8 +6,8 @@ function BlockWithTitleTextAndImageReversed() {
     const notClickable = false;
 
   return (
-    <div id="blogs" className="flex justify-star items-center xl:py-10 xl:pb-20">
-    <div className="flex-col bg-darkness text-white opacity-90 p-20 shadow-lg shadow-darkness max-w-5xl xl:rounded-xl xl:mx-10 xl:py-10">
+    <div id="blogs" className="flex justify-star items-center pb-10 xl:pb-20">
+    <div className="flex-col bg-darkness text-white opacity-90 p-10 xl:p-20 shadow-lg shadow-darkness w-full max-w-5xl xl:rounded-xl 2xl:mx-10 xl:py-10">
         <div className="font-extrabold text-7xl text-center">
             Blogs
         </div>
@@ -26,7 +26,7 @@ function BlockWithTitleTextAndImageReversed() {
             *If you'd like to collaborate, feels free to send me a pull request or <a href='#contact' className='font-bold hover:opacity-90'>contact</a> with me in some way.
         </footer>
     </div>
-    <div className='flex-col hidden xl:block'>
+    <div className='flex-col hidden 2xl:block'>
         <img className="max-h-96" src="./assets/images/morty.png" alt="rick"/>
     </div>
 </div>
