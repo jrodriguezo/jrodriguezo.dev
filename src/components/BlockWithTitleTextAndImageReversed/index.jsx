@@ -6,7 +6,7 @@ function BlockWithTitleTextAndImageReversed() {
     const notClickable = false;
 
   return (
-    <div id="blogs" className="flex justify-star items-center pb-10 xl:pb-20">
+    <div id="blogs" className="flex justify-star items-center xl:pt-20 pb-10 xl:pb-20">
     <div className="flex-col bg-darkness text-white opacity-90 p-10 xl:p-20 shadow-lg shadow-darkness w-full max-w-5xl xl:rounded-xl 2xl:mx-10 xl:py-10">
         <div className="font-extrabold text-7xl text-center">
             Blogs
