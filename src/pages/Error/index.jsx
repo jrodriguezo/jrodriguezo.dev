@@ -6,7 +6,7 @@ function PageNotFound() {
   return (
     <div className="flex flex-col mx-auto max-w-3xl items-center min-h-screen">
       <p className="text-5xl opacity-90 mt-20 text-red-400">PAGE NOT FOUND</p>
-      <p className="text-xl  opacity-30 mb-20">ERROR 404</p>
+      <p className="text-xl  opacity-30 mb-20 tracking-widest"><span className="px-2">·</span>ERROR 404<span className="px-2">·</span></p>
       <div className="absolute top-1/2 left-1/3 mt-20"></div>
       <ErrorGif />
       <p className="text-xl opacity-50 mt-10">
