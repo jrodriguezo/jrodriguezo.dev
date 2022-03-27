@@ -5,13 +5,13 @@ import ErrorGif from "../../components/ErrorGif";
 function PageNotFound() {
   return (
     <div className="flex flex-col mx-auto max-w-3xl items-center min-h-screen">
-      <p className="text-5xl opacity-90 mt-20">PAGE NOT FOUND</p>
+      <p className="text-5xl opacity-90 mt-20 text-red-400">PAGE NOT FOUND</p>
       <p className="text-xl  opacity-30 mb-20">ERROR 404</p>
       <div className="absolute top-1/2 left-1/3 mt-20"></div>
       <ErrorGif />
       <p className="text-xl opacity-50 mt-10">
         Sorry, we can't find that page! Don't worry though, everything is under
-        control.
+        control. 
       </p>
       <Link
         className="text-darkness bg-red-400 hover:opacity-70 font-bold py-2 px-4 rounded-full text-center mt-5"
