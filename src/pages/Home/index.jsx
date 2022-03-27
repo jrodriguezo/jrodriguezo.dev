@@ -14,13 +14,13 @@ export default function Home() {
         <Header />
         <CoverPage />
       </div>
-      <section className="sm:px-56">
+      <section className="px-10 md:px-28 lg:px-56 overflow-hidden">
         <div className="mx-auto md:bg-gray-rick-morty">
           <BlockWithTitleTextAndImage />
           <Philosophy />
           <BlockWithTitleTextAndImageReversed />
           <div className="bg-darkness text-yellow-rick-morty h-5/6 my-10 py-40">
-            <div className="mx-auto sm:w-1/2 font-bold text-7xl text-center px-4 my-10">
+            <div className="flex flex-col mx-auto p-10 sm:w-1/2 font-bold text-4xl sm:text-7xl text-center sm:px-4 sm:my-10">
               <p>This website is currently under construction.</p>
               <p className="text-xl text-zinc-300 opacity-30"> Last update was on March 26th, 2022</p>
               <p className="mt-20">Visit: </p>
