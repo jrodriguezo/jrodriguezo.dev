@@ -6,3 +6,4 @@ This is my personal web where it includes some information about me and there is
 
 ## About project
 - Upgraded to React 18 (04/17/2022)
+- CI/CD pipeline with Netlify and GitHub (master branch)
