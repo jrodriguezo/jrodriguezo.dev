@@ -2,8 +2,8 @@ import Tittle from "../../components/BlogUtilities/Tittle";
 
 export default function Fitness() {
   return (
-    <section className="md:px-56">
-      <div className="md:bg-gray-rick-morty p-20 text-black-js">
+    <section className="xl:px-56">
+      <div className="bg-gray-rick-morty p-20 text-black-js">
         <Tittle children="Be the best version of you" />
         <div className="mx-auto w-20 my-4 border-t-2 border-black-js"></div>
         <div className="text-center font-bold text-4xl text-black-rick-morty tracking-widest">
