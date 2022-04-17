@@ -3,7 +3,6 @@ import Fitness from './pages/Fitness/index';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
-import Philosophy from './pages/Philosophy';
 import PageNotFound from './pages/Error';
 
 function App() {
