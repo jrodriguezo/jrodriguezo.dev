@@ -7,6 +7,7 @@ import BlockWithTitleTextAndImageReversed from "../../components/BlockWithTitleT
 
 import "./styles.css";
 import UnderConstruction from "../../components/UnderConstruction";
+import Projects from "../../components/Projects";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <BlockWithTitleTextAndImage />
           <Philosophy />
           <BlockWithTitleTextAndImageReversed />
+          <Projects />
           <UnderConstruction />
         </div>
       </section>
