@@ -9,15 +9,14 @@ export default function Header() {
     setOpen((prevState) => !prevState);
   };
 
-  const isOpen = open ? "flex-col sm:flex-wrap" : "flex-wrap";
   const isVisible = open ? "block" : "hidden";
 
   const routes = (
     <>
-      <a className="hover:opacity-60 sm:mr-4" href="#about">
+      <a className="hover:opacity-60 text-xl sm:text-2xl sm:mr-4" href="#about">
         About
       </a>
-      <a className="hover:opacity-60" href="#blogs">
+      <a className="hover:opacity-60 text-xl sm:text-2xl" href="#blogs">
         Blogs
       </a>
     </>
@@ -28,14 +27,12 @@ export default function Header() {
       <nav
         className={`flex flex-wrap p-5 sm:p-0 sm:pt-5 items-center max-w-5xl text-3xl mx-auto justify-between`}
       >
-        <Link className="font-semibold hover:opacity-60" to="/">
+        <Link className="text-xl sm:text-2xl font-semibold hover:opacity-60" to="/">
           &lt;jrodriguezo &frasl;&gt;
         </Link>
         <div className="block sm:hidden">
-          {!open && <FaHamburger onClick={handleClick}>Open</FaHamburger>}
-          {open && (
-            <FaRegWindowClose onClick={handleClick}>Close</FaRegWindowClose>
-          )}
+          {!open && <FaHamburger onClick={handleClick} />}
+          {open && <FaRegWindowClose onClick={handleClick} />}
         </div>
         <div className={`hidden flex-col  sm:block sm:flex-row items-center`}>
           {routes}

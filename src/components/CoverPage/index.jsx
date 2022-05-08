@@ -1,13 +1,13 @@
 import React from "react";
-import TypeAnimation from 'react-type-animation'
-import {FaRegHeart} from 'react-icons/fa'
+import TypeAnimation from "react-type-animation";
+import { FaRegHeart } from "react-icons/fa";
 
 function CoverPage() {
   return (
     <div className="flex min-h-screen text-center">
       <div className="m-auto">
-        <div className="font-extrabold text-7xl">Frontend Developer</div>
-        <div className="text-3xl opacity-60">
+        <div className="font-extrabold text-5xl sm:text-7xl">Frontend Developer</div>
+        <div className="text-xl sm:text-3xl opacity-60">
           <TypeAnimation
             cursor={true}
             sequence={["JavaScript revol ", 1000, "JavaScript lover "]}
@@ -18,7 +18,7 @@ function CoverPage() {
             <FaRegHeart size={60} />
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 p-10">
+        {/*<div className="absolute inset-x-0 bottom-0 p-10">
           <a
             className="hover:opacity-60 font-semibold"
             href="https://github.com/jrodriguezo"
@@ -27,7 +27,7 @@ function CoverPage() {
           >
             Github
           </a>
-        </div>
+          </div>*/}
       </div>
     </div>
   );
