@@ -13,11 +13,14 @@ export default function Header() {
 
   const routes = (
     <>
-      <a className="hover:opacity-60 text-xl sm:text-2xl sm:mr-4" href="#about">
+      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#about">
         About
       </a>
-      <a className="hover:opacity-60 text-xl sm:text-2xl" href="#blogs">
+      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#blogs">
         Blogs
+      </a>
+      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#projects">
+        Projects
       </a>
     </>
   );
@@ -25,9 +28,12 @@ export default function Header() {
   return (
     <header>
       <nav
-        className={`flex flex-wrap p-5 sm:p-0 sm:pt-5 items-center max-w-5xl text-3xl mx-auto justify-between`}
+        className={`flex flex-wrap p-5 sm:pt-5 items-center lg:px-56 text-3xl mx-auto justify-between`}
       >
-        <Link className="text-xl sm:text-2xl font-semibold hover:opacity-60" to="/">
+        <Link
+          className="text-xl sm:text-2xl font-semibold hover:opacity-60"
+          to="/"
+        >
           &lt;jrodriguezo &frasl;&gt;
         </Link>
         <div className="block sm:hidden">
