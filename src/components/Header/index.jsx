@@ -34,7 +34,7 @@ export default function Header() {
           className="text-xl sm:text-2xl font-semibold hover:opacity-60"
           to="/"
         >
-          &lt;jrodriguezo &frasl;&gt;
+          <img src="personal_logo.png" className="h-16" alt="text about my name and first name" />
         </Link>
         <div className="block sm:hidden">
           {!open && <FaHamburger onClick={handleClick} />}
