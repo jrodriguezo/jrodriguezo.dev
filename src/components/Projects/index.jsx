@@ -35,7 +35,7 @@ function Projects() {
   ];
 
   return (
-    <div id="projects" className="bg-darkness h-5/6 py-40">
+    <div id="projects" className="bg-darkness h-5/6 py-20">
       <div className="flex justify-center items-center flex-col sm:flex-row">
         <div className="flex-auto text-center px-4">
           <p className="font-extrabold text-7xl text-brown-rick-morty">
