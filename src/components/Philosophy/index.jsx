@@ -1,12 +1,12 @@
 import React from "react";
 import Blockquote from "../Blockquote";
-import './style.css'
+import "./style.css";
 
 function Philosophy() {
   return (
     <div
       id="philosophy"
-      className="bg-darkness text-blue-rick-morty h-5/6 my-10 py-40 sm:mx-40"
+      className="bg-darkness text-blue-rick-morty h-5/6 py-20 sm:mx-40"
     >
       <div className="flex justify-center items-center flex-col sm:flex-row">
         <div className="flex-auto sm:w-1/2 font-extrabold text-5xl sm:text-7xl text-center px-4 my-10">

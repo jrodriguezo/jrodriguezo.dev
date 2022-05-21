@@ -62,7 +62,7 @@ export default function Blockquote() {
   }, [minutes, showNextQuote]);
 
   return (
-    <div className="p-4 sm:px-32 opacity-100 text-center">
+    <div className="p-4 xl:px-14 2xl:px-32 opacity-100 text-center">
       <span className="font-serif font-black text-6xl sm:text-8xl">“</span>
       <p className="text-white font-extralight text-2xl sm:text-4xl">
         {currentQuote.description}
