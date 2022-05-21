@@ -19,7 +19,7 @@ function Philosophy() {
             <li>Persuade Dreams</li>
           </ul>
         </div>
-        <div className="flex-auto w-2/3 mt-10 sm:mt-0 sm:w-1/2">
+        <div className="flex-auto mt-10 sm:mt-0 sm:w-1/2">
           <Blockquote />
         </div>
       </div>
