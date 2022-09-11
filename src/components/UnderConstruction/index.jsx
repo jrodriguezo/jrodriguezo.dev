@@ -1,8 +1,8 @@
 import React from 'react'
 
-function UnderConstruction() {
+function UnderConstruction () {
   return (
-    
+
     <div className="bg-darkness text-yellow-rick-morty h-5/6 py-40 overflow-hidden">
     <div className="flex flex-col mx-auto p-10 sm:w-1/2 font-bold text-4xl sm:text-7xl text-center sm:px-4 sm:my-10">
       <p>This website is currently under construction.</p>

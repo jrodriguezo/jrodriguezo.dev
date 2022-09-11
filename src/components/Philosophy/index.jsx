@@ -1,8 +1,8 @@
-import React from "react";
-import Blockquote from "../Blockquote";
-import "./style.css";
+import React from 'react'
+import Blockquote from '../Blockquote'
+import './style.css'
 
-function Philosophy() {
+function Philosophy () {
   return (
     <div
       id="philosophy"
@@ -24,7 +24,7 @@ function Philosophy() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Philosophy;
+export default Philosophy

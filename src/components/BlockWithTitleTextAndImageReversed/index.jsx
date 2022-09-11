@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function BlockWithTitleTextAndImageReversed() {
+function BlockWithTitleTextAndImageReversed () {
   const linkStyle =
-    "bg-yellow-rick-morty transition-all duration-300 hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center";
+    'bg-yellow-rick-morty transition-all duration-300 hover:opacity-70 text-darkness font-bold py-2 px-4 m-2 rounded-full text-center'
 
   return (
     <div
@@ -15,15 +15,15 @@ function BlockWithTitleTextAndImageReversed() {
           Blogs
         </div>
         <div className="text-base sm:text-xl text-center mt-2">
-          written by me or{" "}
+          written by me or{' '}
           <strong className="text-yellow-rick-morty opacity-70">
             collaborators*
           </strong>
         </div>
         <div className="text-2xl mt-10">
           <p>
-            Discover{" "}
-            <strong className="text-yellow-rick-morty">unique content</strong>{" "}
+            Discover{' '}
+            <strong className="text-yellow-rick-morty">unique content</strong>{' '}
             on differents topics. Are you gonna miss it ?
           </p>
         </div>
@@ -37,10 +37,10 @@ function BlockWithTitleTextAndImageReversed() {
         </div>
 
         <footer className="text-yellow-rick-morty text-sm italic opacity-70">
-          *If you'd like to collaborate, feels free to send me a pull request or{" "}
+          *If you'd like to collaborate, feels free to send me a pull request or{' '}
           <a href="#contact" className="font-bold hover:opacity-90">
             contact
-          </a>{" "}
+          </a>{' '}
           with me in some way.
         </footer>
       </div>
@@ -48,7 +48,7 @@ function BlockWithTitleTextAndImageReversed() {
         <img className="max-h-96" src="./assets/images/morty.png" alt="rick" />
       </div>
     </div>
-  );
+  )
 }
 
-export default BlockWithTitleTextAndImageReversed;
+export default BlockWithTitleTextAndImageReversed

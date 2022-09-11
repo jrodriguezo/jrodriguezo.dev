@@ -1,11 +1,11 @@
-import Home from './pages/Home/index';
-import Fitness from './pages/Fitness/index';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
-import PageNotFound from './pages/Error';
+import Home from './pages/Home/index'
+import Fitness from './pages/Fitness/index'
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
+import PageNotFound from './pages/Error'
 
-function App() {
+function App () {
   return (
     <div className="bg-black-js text-white">
           <Routes>
@@ -15,7 +15,7 @@ function App() {
           </Routes>
         <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

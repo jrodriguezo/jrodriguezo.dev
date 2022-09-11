@@ -1,7 +1,7 @@
 import React from 'react'
 import errorImageGif from './error404-not-found.gif'
 
-function ErrorGif() {
+function ErrorGif () {
   return (
     <img
     className="w-full opacity-30"

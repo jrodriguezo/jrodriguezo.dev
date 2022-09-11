@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
+    './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
@@ -13,9 +13,9 @@ module.exports = {
         'green-darkness-rick-morty': '#82C58B',
         'brown-rick-morty': '#D1AF90',
         'gray-rick-morty': '#DDD8D2',
-        'darkness': '#2D2D2D'
+        darkness: '#2D2D2D'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }

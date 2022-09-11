@@ -1,38 +1,38 @@
-import React from "react";
-import ProjectCard from "../ProjectCard";
+import React from 'react'
+import ProjectCard from '../ProjectCard'
 
-function Projects() {
+function Projects () {
   const projectsData = [
     {
-      title: "eSignature & blockchain",
+      title: 'eSignature & blockchain',
       description:
-        "Web application for electronic signature mechanisms using the building block CEF eSignature that complying with the eIDAS regulation, the validation with ETSI and the Self-Sovereign digital Identity management via Blockchain on the Ethereum network using Smart Contracts.",
-      tags: ["Java", "Web3j", "Blockchain", "Solidity"],
-      code: "https://github.com/jrodriguezo/eSignature-blockchain",
+        'Web application for electronic signature mechanisms using the building block CEF eSignature that complying with the eIDAS regulation, the validation with ETSI and the Self-Sovereign digital Identity management via Blockchain on the Ethereum network using Smart Contracts.',
+      tags: ['Java', 'Web3j', 'Blockchain', 'Solidity'],
+      code: 'https://github.com/jrodriguezo/eSignature-blockchain'
     },
     {
-      title: "Remote SPARQL Queries Application",
+      title: 'Remote SPARQL Queries Application',
       description:
-        "Application to make SPARQL queries to ontologies dataset serialized in RDF through a Fuseki endpoint.",
-      tags: ["Python", "Fuseki", "Tkinter"],
-      code: "https://github.com/jrodriguezo/Remote-SPARQL-Query",
+        'Application to make SPARQL queries to ontologies dataset serialized in RDF through a Fuseki endpoint.',
+      tags: ['Python', 'Fuseki', 'Tkinter'],
+      code: 'https://github.com/jrodriguezo/Remote-SPARQL-Query'
     },
     {
-      title: "Old Personal Web",
+      title: 'Old Personal Web',
       description:
-        "Once of my first static web portfolio made with basic syntax and includes a little blog.",
-      tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      code: "https://github.com/jrodriguezo/jrodriguezo.github.io",
-      deploy: "https://jrodriguezo.github.io/",
+        'Once of my first static web portfolio made with basic syntax and includes a little blog.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      code: 'https://github.com/jrodriguezo/jrodriguezo.github.io',
+      deploy: 'https://jrodriguezo.github.io/'
     },
     {
-      title: "React BeShop",
+      title: 'React BeShop',
       description:
-        "Technical code interview that consisted in replicating an online cell phone store; from a cell phone catalog (with the possibility of filtering by model or brand) you can select a specific product and choose the model and color. The data was retrieved through an API and the shopping cart counter had to be global and cached on the client-side.",
-      tags: ["React", "API", "JavaScript", "CSS", "lscache"],
-      code: "https://github.com/jrodriguezo/react-beshop",
-    },
-  ];
+        'Technical code interview that consisted in replicating an online cell phone store; from a cell phone catalog (with the possibility of filtering by model or brand) you can select a specific product and choose the model and color. The data was retrieved through an API and the shopping cart counter had to be global and cached on the client-side.',
+      tags: ['React', 'API', 'JavaScript', 'CSS', 'lscache'],
+      code: 'https://github.com/jrodriguezo/react-beshop'
+    }
+  ]
 
   return (
     <div id="projects" className="bg-darkness h-5/6 py-20">
@@ -52,14 +52,14 @@ function Projects() {
                   <ProjectCard
                     key={`ProjectCard-${index}-${title}`}
                     number={index + 1}
-                    position={index % 2 === 0 ? "right" : "left"}
+                    position={index % 2 === 0 ? 'right' : 'left'}
                     title={title}
                     description={description}
                     tags={tags}
                     code={code}
                     deploy={deploy}
                   />
-                );
+                )
               }
             )}
           </div>
@@ -69,7 +69,7 @@ function Projects() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

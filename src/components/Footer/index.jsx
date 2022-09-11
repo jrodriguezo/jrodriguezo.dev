@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function Footer() {
+function Footer () {
   return (
     <footer
       id="contact"
@@ -36,7 +36,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

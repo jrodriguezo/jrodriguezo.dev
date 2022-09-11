@@ -1,7 +1,7 @@
 import React from 'react'
 import Collapse from '../Collapse'
 
-function BlockWithTitleTextAndImage() {
+function BlockWithTitleTextAndImage () {
   return (
     <div id="about" className="flex justify-end items-center py-10 xl:py-20">
         <div className='flex-col hidden 2xl:block'>
@@ -15,17 +15,17 @@ function BlockWithTitleTextAndImage() {
                 Jesús Rodríguez Ovejero
             </div>
             <div className="text-lg sm:text-2xl my-10">
-                    <p>I'm <strong className='text-green-rick-morty'>telecommunications engineer</strong> specialized in Computer Science. 
-                    Addicted to improve with enthusiasm every day. 
+                    <p>I'm <strong className='text-green-rick-morty'>telecommunications engineer</strong> specialized in Computer Science.
+                    Addicted to improve with enthusiasm every day.
                     Lovin' code random stuffs with a minimalist design.
-                    Restless to find perfection. Willing to face any challenge.</p>      
+                    Restless to find perfection. Willing to face any challenge.</p>
             </div>
             <Collapse buttonText="+ qualifications"/>
             <div className='flex justify-center font font-thin text-sm sm:text-lg opacity-90 mt-10'>
-                <p>Tech Stack<span class="px-2 opacity-30">·</span>Most Used</p>
+                <p>Tech Stack<span className="px-2 opacity-30">·</span>Most Used</p>
             </div>
             <div className='grid grid-cols-6 sm:grid-cols-11 mt-10 content-center gap-2'>
-                {/* Icons retrieved from icons8 with 96x96 svg format*/}
+                {/* Icons retrieved from icons8 with 96x96 svg format */}
                 <img src="./assets/images/toolkit-icons/html.svg" alt="icon of HTML"/>
                 <img src="./assets/images/toolkit-icons/css3.svg" alt="icon of CSS3"/>
                 <img src="./assets/images/toolkit-icons/sass.svg" alt="icon of SASS"/>

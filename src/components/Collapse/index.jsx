@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import Button from "../Button";
+import React, { useState } from 'react'
+import Button from '../Button'
 
-function Collapse({ buttonText }) {
-  const [visibility, setVisibility] = useState(false);
+function Collapse ({ buttonText }) {
+  const [visibility, setVisibility] = useState(false)
 
   const handleClick = () => {
-    setVisibility((prevVisibility) => !prevVisibility);
-  };
+    setVisibility((prevVisibility) => !prevVisibility)
+  }
 
   const Box = ({ year, title }) => {
     return (
@@ -14,8 +14,8 @@ function Collapse({ buttonText }) {
         <p className="text-xs sm:text-sm text-green-rick-morty">{year}</p>
         <p className="text-sm sm:text-xl text-left">{title}</p>
       </li>
-    );
-  };
+    )
+  }
 
   return (
     <div>
@@ -25,7 +25,7 @@ function Collapse({ buttonText }) {
         onClick={handleClick}
       />
       <ul
-        className={`${visibility ? "h-auto opacity-100" : "h-0 opacity-0 overflow-hidden"} transition-opacity duration-1000 my-8 pl-10`}
+        className={`${visibility ? 'h-auto opacity-100' : 'h-0 opacity-0 overflow-hidden'} transition-opacity duration-1000 my-8 pl-10`}
       >
         <Box
           year="2020-2021 (2 years)"
@@ -37,7 +37,7 @@ function Collapse({ buttonText }) {
         />
       </ul>
     </div>
-  );
+  )
 }
 
-export default Collapse;
+export default Collapse
