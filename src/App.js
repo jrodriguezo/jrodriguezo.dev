@@ -8,12 +8,12 @@ import PageNotFound from './pages/Error'
 function App () {
   return (
     <div className="bg-black-js text-white">
-          <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='/blog/fitness' element={<Fitness />}></Route>
-            <Route exact path='*' element={<PageNotFound/>}></Route>
-          </Routes>
-        <Footer />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/blog/fitness' element={<Fitness />}></Route>
+        <Route exact path='*' element={<PageNotFound/>}></Route>
+      </Routes>
+      <Footer />
     </div>
   )
 }

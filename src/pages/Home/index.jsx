@@ -38,7 +38,7 @@ export default function Home () {
           <Projects />
           <UnderConstruction />
         </div>
-        </section>
+      </section>
     </div>
   )
 }

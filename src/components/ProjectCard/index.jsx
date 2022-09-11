@@ -68,9 +68,8 @@ function ProjectCard ({
     </div>
   )
 
-  return width > breakpoint
-    ? (
-    <div
+  if (width > breakpoint) {
+    return <div
       className={`mb-8 ${
         position === 'right'
           ? 'flex right-timeline'
@@ -85,10 +84,8 @@ function ProjectCard ({
       </div>
       {project()}
     </div>
-      )
-    : (
-        project('w-12/12', 'my-12')
-      )
+  }
+  return project('w-12/12', 'my-12')
 }
 
 export default ProjectCard
