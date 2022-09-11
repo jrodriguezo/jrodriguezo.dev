@@ -1,5 +1,5 @@
 import React from 'react'
-import TypeAnimation from 'react-type-animation'
+import { TypeAnimation } from 'react-type-animation'
 import { FaRegHeart } from 'react-icons/fa'
 
 //  text-transparent bg-clip-text bg-gradient-to-r from-black-js via-yellow-js to-black-js
