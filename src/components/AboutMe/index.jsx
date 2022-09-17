@@ -30,13 +30,13 @@ function AboutMe () {
             <div className="text-lg font-semibold sm:text-5xl mt-10">
           Who Am I?
             </div>
-            <div className="text-lg font-semibold sm:text-2xl mt-20">
+            <div className=" font-semibold text-2xl mt-5 sm:mt-20">
           Short, 1st person
             </div>
             <div className="text-lg sm:text-2xl mt-5 mb-10">
               <p> I'm <span className={`${strongPhraseStyles}`}>Telecommunications Engineer</span> specialized in <span className={`${strongPhraseStyles}`}>Computer Science</span>. I've passionate about  <span className={`${strongPhraseStyles}`}>Frontend Development</span> and that is what I do.</p>
             </div>
-            <div className="text-lg font-semibold sm:text-2xl mt-20">
+            <div className="text-lg font-semibold sm:text-2xl mt-5 sm:mt-20">
           Long, 1st person
             </div>
             <div className="text-lg sm:text-2xl mt-5 mb-10">
