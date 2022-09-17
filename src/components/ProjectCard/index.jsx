@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
-import GithubSVG from "../SVGs/github";
-import { VscRocket } from "react-icons/vsc";
+import React, { useState, useEffect } from 'react'
+import GithubSVG from '../SVGs/github'
+import { VscRocket } from 'react-icons/vsc'
 
-function ProjectCard({
+function ProjectCard ({
   title,
   description,
   tags,
   code,
   deploy,
   position,
-  number,
+  number
 }) {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 1200;
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 1200
   useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResizeWindow);
+    const handleResizeWindow = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleResizeWindow)
     return () => {
-      window.removeEventListener("resize", handleResizeWindow);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResizeWindow)
+    }
+  }, [])
 
   const project = (width = 'w-5/12', marginY = 'my-0') => (
     <div className={`order-1 bg-brown-rick-morty rounded-lg shadow-md shadow-brown-rick-morty ${width} ${marginY} px-6 py-4`}>
@@ -30,7 +30,7 @@ function ProjectCard({
             target="_blank"
             rel="noopener noreferrer"
             type="button"
-            class={`inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#C35353]/50 transition-all duration-300 hover:opacity-70 pl-4`}
+            className={'inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#C35353]/50 transition-all duration-300 hover:opacity-70 pl-4'}
           >
             Demo <VscRocket className="w-10 h-10 p-2" />
           </a>
@@ -41,7 +41,7 @@ function ProjectCard({
             target="_blank"
             rel="noopener noreferrer"
             type="button"
-            class={`inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#F17655]/50 transition-all duration-300 hover:opacity-70 pl-4`}
+            className={'inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#F17655]/50 transition-all duration-300 hover:opacity-70 pl-4'}
           >
             Code <GithubSVG className="w-10 h-10 p-1" />
           </a>
@@ -57,23 +57,23 @@ function ProjectCard({
       <ul className="flex flex-wrap space-x-2 justify-center">
         {tags.map((tag) => {
           return (
-            <li
-              className={`text-black-js/70 rounded-full text-xl bg-black-js/20 px-2 my-2`}
+            <li key={tag}
+              className={'text-black-js/70 rounded-full text-xl bg-black-js/20 px-2 my-2'}
             >
               #{tag}
             </li>
-          );
+          )
         })}
       </ul>
     </div>
-  );
+  )
 
-  return width > breakpoint ? (
-    <div
+  if (width > breakpoint) {
+    return <div
       className={`mb-8 ${
-        position === "right"
-          ? "flex right-timeline"
-          : "flex flex-row-reverse left-timeline"
+        position === 'right'
+          ? 'flex right-timeline'
+          : 'flex flex-row-reverse left-timeline'
       } justify-between items-center w-full`}
     >
       <div className="order-1 w-5/12"></div>
@@ -84,9 +84,8 @@ function ProjectCard({
       </div>
       {project()}
     </div>
-  ) : (
-    project('w-12/12', 'my-12')
-  );
+  }
+  return project('w-12/12', 'my-12')
 }
 
-export default ProjectCard;
+export default ProjectCard

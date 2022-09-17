@@ -1,9 +1,9 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Link } from "react-router-dom";
-import ErrorGif from "../../components/ErrorGif";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'react-router-dom'
+import ErrorGif from '../../components/ErrorGif'
 
-function PageNotFound() {
+function PageNotFound () {
   return (
     <>
       <Helmet>
@@ -35,7 +35,7 @@ function PageNotFound() {
         </Link>
       </div>
     </>
-  );
+  )
 }
 
-export default PageNotFound;
+export default PageNotFound
