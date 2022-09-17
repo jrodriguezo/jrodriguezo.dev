@@ -16,7 +16,7 @@ function AboutMe () {
   const strongPhraseStyles = 'font-medium text-gray-100'
   return (
     <div
-      id="blogs"
+      id="about"
     >
       <div className="bg-darkness p-10 xl:p-20 shadow-lg shadow-darkness w-full xl:py-10">
         <div id="about" className="flex py-10">

@@ -19,9 +19,11 @@ export default function Header () {
       <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#blogs">
         Blogs
       </a>
+      {/* -- NOT AVAILABLE YET
       <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#projects">
         Projects
       </a>
+      */}
     </>
   )
 
