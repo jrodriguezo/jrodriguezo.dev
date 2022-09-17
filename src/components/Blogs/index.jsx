@@ -22,7 +22,7 @@ function Blogs () {
           <p>
             Discover
             <span className="font-medium text-yellow-rick-morty"> unique content </span>
-            on differents topics. Are you gonna miss it ?
+            on differents topics. Are you gonna miss it?
           </p>
         </div>
         <div className="flex flex-wrap gap-4 max-w-fit">
