@@ -27,10 +27,10 @@ function AboutMe () {
             <div className={`${strongPhraseStyles} text-2xl sm:text-2xl mt-2`}>
           +{countCodeYears(new Date(2021, 6, 1))} years experience as a Developer
             </div>
-            <div className="text-lg font-semibold sm:text-5xl mt-10">
+            <div className="text-2xl font-semibold sm:text-5xl mt-10">
           Who Am I?
             </div>
-            <div className=" font-semibold text-2xl mt-5 sm:mt-20">
+            <div className="text-lg font-semibold text-2xl mt-10 sm:mt-20">
           Short, 1st person
             </div>
             <div className="text-lg sm:text-2xl mt-5 mb-10">
