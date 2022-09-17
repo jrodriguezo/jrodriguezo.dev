@@ -29,15 +29,13 @@ export default function Home () {
         <Header />
         <CoverPage />
       </div>
-      <section className="lg:px-56 text-gray-300 px-5 sm:px-0">
-        <div>
-          <AboutMe />
-          <Skills />
-          <Philosophy />
-          <Blogs />
-          {/* <Projects /> -- TODO: improve how it should be visible */}
-          {/* <UnderConstruction /> -- Release v1.0 */}
-        </div>
+      <section className="flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-5 sm:px-0">
+        <AboutMe />
+        <Skills />
+        <Philosophy />
+        <Blogs />
+        {/* <Projects /> -- TODO: improve how it should be visible */}
+        {/* <UnderConstruction /> -- Release v1.0 */}
       </section>
     </div>
   )

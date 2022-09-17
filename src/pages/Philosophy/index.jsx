@@ -5,7 +5,7 @@ function Philosophy () {
   return (
     <div
       id="philosophy"
-      className="bg-darkness h-5/6 py-20 mt-20"
+      className="bg-darkness h-5/6 py-20"
     >
       <div className="flex justify-center items-center flex-col xl:flex-row">
         <div className="flex-auto xl:w-1/2 font-extrabold text-5xl sm:text-7xl text-center px-4 my-10">

@@ -8,9 +8,9 @@ function Blogs () {
   return (
     <div
       id="blogs"
-      className="flex items-center justify-between py-10"
+      className="flex items-center justify-between"
     >
-      <div className="flex-col w-full xl:py-10">
+      <div className="flex-col w-full">
         <div className="font-extrabold text-5xl sm:text-7xl">
           Blogs
         </div>

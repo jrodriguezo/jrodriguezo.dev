@@ -17,7 +17,6 @@ function AboutMe () {
   return (
     <div
       id="blogs"
-      className="xl:py-20 py-10"
     >
       <div className="bg-darkness p-10 xl:p-20 shadow-lg shadow-darkness w-full xl:py-10">
         <div id="about" className="flex py-10">
