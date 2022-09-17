@@ -1,4 +1,4 @@
-import Tittle from '../../components/BlogUtilities/Tittle'
+import Tittle from 'components/BlogUtilities/Tittle'
 
 export default function Fitness () {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Collapse from '../Collapse'
+import Collapse from 'components/Collapse'
 
 function BlockWithTitleTextAndImage () {
   return (

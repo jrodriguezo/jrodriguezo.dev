@@ -1,14 +1,14 @@
-import Header from '../../components/Header'
-import CoverPage from '../../components/CoverPage'
+import Header from 'components/Header'
+import CoverPage from 'components/CoverPage'
 
 import Philosophy from '../Philosophy'
-import Blogs from '../../components/Blogs'
+import Blogs from 'components/Blogs'
 
-// import UnderConstruction from '../../components/UnderConstruction'
-// import Projects from '../../components/Projects'
+// import UnderConstruction from 'components/UnderConstruction'
+// import Projects from 'components/Projects'
 import Helmet from 'react-helmet'
-import AboutMe from '../../components/AboutMe'
-import Skills from '../../components/Skills'
+import AboutMe from 'components/AboutMe'
+import Skills from 'components/Skills'
 
 import './styles.css'
 
@@ -29,7 +29,7 @@ export default function Home () {
         <Header />
         <CoverPage />
       </div>
-      <section className="flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-5 sm:px-0">
+      <section className="flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-3 sm:px-0">
         <AboutMe />
         <Skills />
         <Philosophy />
