@@ -2,10 +2,10 @@ import Header from '../../components/Header'
 import CoverPage from '../../components/CoverPage'
 
 import Philosophy from '../Philosophy'
-import BlockWithTitleTextAndImageReversed from '../../components/BlockWithTitleTextAndImageReversed'
+import Blogs from '../../components/Blogs'
 
-import UnderConstruction from '../../components/UnderConstruction'
-import Projects from '../../components/Projects'
+// import UnderConstruction from '../../components/UnderConstruction'
+// import Projects from '../../components/Projects'
 import Helmet from 'react-helmet'
 import AboutMe from '../../components/AboutMe'
 import Skills from '../../components/Skills'
@@ -29,14 +29,14 @@ export default function Home () {
         <Header />
         <CoverPage />
       </div>
-      <section className="lg:px-56">
+      <section className="lg:px-56 text-gray-300 px-5 sm:px-0">
         <div>
           <AboutMe />
-          <Philosophy />
           <Skills />
-          <BlockWithTitleTextAndImageReversed />
-          <Projects />
-          <UnderConstruction />
+          <Philosophy />
+          <Blogs />
+          {/* <Projects /> -- TODO: improve how it should be visible */}
+          {/* <UnderConstruction /> -- Release v1.0 */}
         </div>
       </section>
     </div>
