@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Blogs () {
   const linkStyle =
-    'bg-yellow-rick-morty transition-all duration-300 hover:opacity-70 text-black-js font-bold rounded-md p-2 px-4 my-4 text-center'
+    'bg-yellow-rick-morty transition-all duration-300 hover:opacity-70 text-black font-bold rounded-md p-2 px-4 my-4 text-center'
 
   return (
     <div
@@ -11,7 +11,7 @@ function Blogs () {
       className="flex items-center justify-between"
     >
       <div className="flex-col w-full">
-        <div className="font-extrabold text-5xl sm:text-7xl">
+        <div className="font-extrabold text-gray-50 text-5xl sm:text-7xl">
           Blogs
         </div>
         <div className="text-base sm:text-xl mt-2">

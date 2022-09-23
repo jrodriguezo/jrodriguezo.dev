@@ -25,7 +25,7 @@ export default function Home () {
           content="Jesús Rodríguez Ovejero is a Telecommunications Engineer specialized in Computer Science. Currently, he works as a Frontend Developer. Visit his little blog and take a look at his most recent projects."
         />
       </Helmet>
-      <div className="bg-yellow-js text-black-js">
+      <div className="bg-yellow-rick-morty text-black">
         <Header />
         <CoverPage />
       </div>

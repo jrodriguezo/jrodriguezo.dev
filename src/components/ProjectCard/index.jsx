@@ -30,7 +30,7 @@ function ProjectCard ({
             target="_blank"
             rel="noopener noreferrer"
             type="button"
-            className={'inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#C35353]/50 transition-all duration-300 hover:opacity-70 pl-4'}
+            className={'inline-flex items-center gap-x-2 text-black/90 rounded-full text-xl bg-[#C35353]/50 transition-all duration-300 hover:opacity-70 pl-4'}
           >
             Demo <VscRocket className="w-10 h-10 p-2" />
           </a>
@@ -41,7 +41,7 @@ function ProjectCard ({
             target="_blank"
             rel="noopener noreferrer"
             type="button"
-            className={'inline-flex items-center gap-x-2 text-black-js/90 rounded-full text-xl bg-[#F17655]/50 transition-all duration-300 hover:opacity-70 pl-4'}
+            className={'inline-flex items-center gap-x-2 text-black/90 rounded-full text-xl bg-[#F17655]/50 transition-all duration-300 hover:opacity-70 pl-4'}
           >
             Code <GithubSVG className="w-10 h-10 p-1" />
           </a>
@@ -58,7 +58,7 @@ function ProjectCard ({
         {tags.map((tag) => {
           return (
             <li key={tag}
-              className={'text-black-js/70 rounded-full text-xl bg-black-js/20 px-2 my-2'}
+              className={'text-black/70 rounded-full text-xl bg-black/20 px-2 my-2'}
             >
               #{tag}
             </li>

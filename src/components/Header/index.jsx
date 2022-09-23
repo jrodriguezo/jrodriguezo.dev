@@ -12,19 +12,19 @@ export default function Header () {
   const isVisible = open ? 'block' : 'hidden'
 
   const routes = (
-    <>
-      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#about">
+    <nav className='flex gap-6'>
+      <a className="hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl" href="#about">
         About
       </a>
-      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#blogs">
+      <a className="hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl" href="#blogs">
         Blogs
       </a>
       {/* -- NOT AVAILABLE YET
-      <a className="hover:opacity-60 text-xl sm:text-2xl sm:pl-3" href="#projects">
+      <a className="hover:opacity-60 text-xl sm:text-2xl" href="#projects">
         Projects
       </a>
       */}
-    </>
+    </nav>
   )
 
   return (
@@ -46,7 +46,7 @@ export default function Header () {
         </div>
       </nav>
       <div
-        className={`flex flex-col ${isVisible} items-end pr-2 mr-8 border-r-2 border-r-black-js sm:hidden sm:flex-row`}
+        className={`flex flex-col ${isVisible} items-end pr-2 mr-8 border-r-2 border-r-black sm:hidden sm:flex-row`}
       >
         {routes}
       </div>

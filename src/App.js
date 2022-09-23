@@ -7,7 +7,7 @@ import PageNotFound from './pages/Error'
 
 function App () {
   return (
-    <div className="bg-black-js text-white">
+    <div className="bg-black text-white">
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/blog/fitness' element={<Fitness />}></Route>

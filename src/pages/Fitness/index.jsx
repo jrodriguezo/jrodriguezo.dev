@@ -3,9 +3,9 @@ import Tittle from 'components/BlogUtilities/Tittle'
 export default function Fitness () {
   return (
     <section className="xl:px-56">
-      <div className="bg-gray-rick-morty p-20 text-black-js">
+      <div className="bg-gray-rick-morty p-20 text-black">
         <Tittle>Be the best version of you</Tittle>
-        <div className="mx-auto w-20 my-4 border-t-2 border-black-js"></div>
+        <div className="mx-auto w-20 my-4 border-t-2 border-black"></div>
         <div className="text-center font-bold text-4xl text-black-rick-morty tracking-widest">
           Why is so difficult to achive our goals?
         </div>
@@ -24,7 +24,7 @@ export default function Fitness () {
             title="bulking"
           ></iframe>
         </div>
-        <div className="mx-auto w-20 my-4 border-t-2 border-black-js"></div>
+        <div className="mx-auto w-20 my-4 border-t-2 border-black"></div>
         <div className="text-center font-bold text-4xl text-black-rick-morty tracking-widest">
             Not only our physical conditions is genetic
         </div>

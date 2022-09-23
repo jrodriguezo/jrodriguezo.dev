@@ -2,11 +2,9 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { FaRegHeart } from 'react-icons/fa'
 
-//  text-transparent bg-clip-text bg-gradient-to-r from-black-js via-yellow-js to-black-js
-
 function CoverPage () {
   return (
-    <div className="flex min-h-screen text-center">
+    <div className="flex min-h-screen text-center bg-gradient-to-b from-yellow-rick-morty to-black">
       <div className="m-auto">
         <div className="font-extrabold text-5xl sm:text-7xl">Frontend Developer</div>
         <div className="text-xl sm:text-3xl opacity-60">

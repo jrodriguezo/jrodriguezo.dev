@@ -55,7 +55,7 @@ function Skills () {
   return (
     <section>
       <article className='font text-sm sm:text-lg'>
-        <div className="font-extrabold text-5xl sm:text-7xl">
+        <div className="font-extrabold text-gray-50 text-5xl sm:text-7xl">
           Tech Stack
         </div>
         <div className="text-base sm:text-xl mt-2">

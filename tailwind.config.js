@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'yellow-js': '#f7df1e',
+        'black': '#111111',
         'black-js': '#323330',
         'blue-rick-morty': '#B6DDF1',
         'yellow-rick-morty': '#F3F47F',

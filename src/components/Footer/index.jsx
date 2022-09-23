@@ -4,7 +4,7 @@ function Footer () {
   return (
     <footer
       id="contact"
-      className="flex justify-center items-center text-center bg-black-js text-white py-20"
+      className="flex justify-center items-center text-center bg-black text-white py-20"
     >
       <div className="flex-col">
         <div className="font-extrabold text-7xl opacity-70">Contact</div>
