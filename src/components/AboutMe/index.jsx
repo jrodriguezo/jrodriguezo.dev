@@ -18,7 +18,7 @@ function AboutMe () {
     <div
       id="about"
     >
-      <div className="bg-darkness p-10 xl:p-20 shadow-lg shadow-darkness w-full xl:py-10">
+      <div className="bg-darkness p-6 sm:p-20 shadow-lg shadow-darkness w-full sm:py-10">
         <div id="about" className="flex py-10">
           <div className="max-w-5xl xl:rounded-xl 2xl:mr-10">
             <div className="font-extrabold text-5xl sm:text-7xl">

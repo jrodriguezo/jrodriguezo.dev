@@ -29,7 +29,7 @@ export default function Home () {
         <Header />
         <CoverPage />
       </div>
-      <section className="flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-3 sm:px-0">
+      <section className="flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-3 sm:px-6">
         <AboutMe />
         <Skills />
         <Philosophy />

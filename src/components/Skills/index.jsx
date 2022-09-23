@@ -54,7 +54,7 @@ const skills = {
 function Skills () {
   return (
     <section>
-      <article className='font font-thin text-sm sm:text-lg opacity-90'>
+      <article className='font text-sm sm:text-lg'>
         <div className="font-extrabold text-5xl sm:text-7xl">
           Tech Stack
         </div>
