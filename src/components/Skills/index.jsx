@@ -64,7 +64,7 @@ function Skills () {
       </article>
       <article className='flex flex-wrap justify-between mt-10 content-center gap-2'>
         {/* Icons retrieved from icons8 with 96x96 svg format */}
-        {skills['tech-stack'].map(({ label, icon }) => <div className='flex flex-wrap justify-center h-32 w-32'>
+        {skills['tech-stack'].map(({ label, icon }) => <div className='flex flex-wrap justify-center h-32 w-32 transition-hover ease-in duration-200 hover:-translate-y-2'>
           <img key={label} src={`./assets/images/toolkit-icons/${icon}.svg`} alt={`icon of ${label}`} />
           <p>{label}</p>
         </div>
