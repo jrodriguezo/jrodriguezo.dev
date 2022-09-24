@@ -4,7 +4,7 @@ import { FaRegHeart } from 'react-icons/fa'
 
 function CoverPage () {
   return (
-    <div className='flex min-h-screen text-center bg-gradient-to-b from-yellow-rick-morty to-black'>
+    <div className='flex min-h-screen text-center bg-gradient-to-b from-yellow-rick-morty via-yellow-js to-black'>
       <div className='m-auto'>
         <div className='font-extrabold text-5xl sm:text-7xl'>Frontend Developer</div>
         <div className='text-xl sm:text-3xl opacity-60'>
