@@ -1,4 +1,5 @@
 import React from 'react'
+import CountUp, { useCountUp } from 'react-countup'
 
 const countCodeYears = (startDate) => {
   const currentDate = new Date()
@@ -11,9 +12,9 @@ const countCodeYears = (startDate) => {
   const numYears = numMonths / 12
   return numYears.toFixed(1)
 }
+const strongPhraseStyles = 'font-medium text-gray-500'
 
 function AboutMe () {
-  const strongPhraseStyles = 'font-medium text-gray-500'
   return (
     <div
       id="about"
@@ -22,7 +23,8 @@ function AboutMe () {
         Jesús Rodríguez Ovejero
       </div>
       <div className={`${strongPhraseStyles} text-xl sm:text-3xl mt-2 `}>
-        <span className='font-extralight text-gray-300'>+{countCodeYears(new Date(2021, 6, 1))} years experience as a Frontend Developer</span>
+        <span className='font-extralight text-gray-300'>+<CountUp end={countCodeYears(new Date(2021, 6, 1))} decimals={1} duration={2.3} enableScrollSpy delay={2} /> years experience as a Frontend Developer</span>
+        <br />
       </div>
       <div className="w-full pt-5 sm:pt-20">
         <div id="about" className="flex">
