@@ -11,6 +11,7 @@ import AboutMe from 'components/AboutMe'
 import Skills from 'components/Skills'
 
 import './styles.css'
+import Slider from 'components/Slider/slider'
 
 export default function Home () {
   return (
@@ -31,6 +32,7 @@ export default function Home () {
       </div>
       <section className='flex flex-col sm:py-16 py-8 sm:gap-16 gap-8 lg:px-56 text-gray-300 px-3 sm:px-6'>
         <AboutMe />
+        <Slider />
         <Skills />
         <Philosophy />
         <Blogs />
