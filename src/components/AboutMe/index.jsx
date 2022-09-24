@@ -30,7 +30,7 @@ function AboutMe () {
             scrollSpyOnce
             delay={0.1}
           />
-            years experience as FRONTEND DEVELOPER
+            years of experience as FRONTEND DEVELOPER
         </span>
         <br />
       </div>
