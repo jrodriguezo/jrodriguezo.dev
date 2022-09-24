@@ -1,6 +1,6 @@
 import React from 'react'
 
-const delayBetweenSlides = 5000
+const delayBetweenSlides = 10 * 1000 // 10 * 1000ms = 10s
 const colors = [
   {
     title: 'GitHub Finder',
