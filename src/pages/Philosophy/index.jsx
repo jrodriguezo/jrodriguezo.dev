@@ -8,7 +8,7 @@ function Philosophy () {
       className='bg-darkness h-5/6 py-20'
     >
       <div className='flex justify-center items-center flex-col xl:flex-row'>
-        <div className='flex-auto xl:w-1/2 text-gray-50 font-extrabold text-5xl sm:text-7xl text-center px-4 my-10'>
+        <div className='flex-auto xl:w-1/2 text-gray-50 font-extrabold text-5xl sm:text-7xl text-center px-4 sm:px-10'>
           <p>π-losophy</p>
           <ul className='text-lg sm:text-2xl font-thin tracking-wide mt-4'>
             <li>Be Humble and Positive</li>

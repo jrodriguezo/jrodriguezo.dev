@@ -50,7 +50,7 @@ function Slider () {
           {colors.map((color, index) => (
             <div className='inline-block sm:h-[400px] w-full bg-black-js' key={index}>
               <div className='flex flex-col sm:flex-row justify-between h-full'>
-                <div className='flex flex-col justify-between gap-8 p-10'>
+                <div className='flex flex-col justify-between gap-8 px-4 pt-10 sm:p-10'>
                   <div className='flex flex-col flex-wrap gap-6 wrap break-words whitespace-normal'>
                     <header>
                       <h1 className='font-bold text-3xl'>{color.title}</h1>
