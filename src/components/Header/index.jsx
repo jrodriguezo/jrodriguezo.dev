@@ -12,11 +12,11 @@ export default function Header () {
   const isVisible = open ? 'block' : 'hidden'
 
   const routes = (
-    <nav className='flex gap-6'>
-      <a className='hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl' href='#about'>
+    <nav className='flex flex-col sm:flex-row gap-1 sm:gap-4'>
+      <a className='hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl' href='#about'>
         About
       </a>
-      <a className='hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl' href='#blogs'>
+      <a className='hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl' href='#blogs'>
         Blogs
       </a>
       {/* -- NOT AVAILABLE YET
@@ -38,10 +38,10 @@ export default function Header () {
         >
           <img src='personal_logo.png' className='h-10' alt='text about my name and first name' />
         </Link>
-        <div className='block sm:hidden'>
+        <div className='block sm:hidden transition-opacity easy-in duration-200 hover:opacity-60 cursor-pointer'>
           {open ? <FaRegWindowClose onClick={handleClick} /> : <FaHamburger onClick={handleClick} />}
         </div>
-        <div className={'hidden flex-col  sm:block sm:flex-row items-center'}>
+        <div className={'hidden flex-col sm:block sm:flex-row items-center'}>
           {routes}
         </div>
       </nav>
