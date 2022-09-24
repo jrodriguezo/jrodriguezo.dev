@@ -59,7 +59,7 @@ function Skills () {
           Tech Stack
         </div>
         <div className='text-base sm:text-xl mt-2'>
-          most used in my day to day and love it
+          most used currently in my day to day
         </div>
       </article>
       <article className='flex flex-wrap justify-between mt-10 content-center gap-2'>
