@@ -43,7 +43,7 @@ function Slider () {
           Projects
       </div>
       <div className='text-base sm:text-xl mt-2'>
-          latest highlights
+          latest highlighted
       </div>
       <div className='mx-auto overflow-hidden w-full mt-5 sm:mt-20'>
         <div className='whitespace-nowrap transition ease-linear duration-1000' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
