@@ -7,36 +7,36 @@ function Blogs () {
 
   return (
     <div
-      id="blogs"
-      className="flex items-center justify-between"
+      id='blogs'
+      className='flex items-center justify-between'
     >
-      <div className="flex-col w-full">
-        <div className="font-extrabold text-gray-50 text-5xl sm:text-7xl">
+      <div className='flex-col w-full'>
+        <div className='font-extrabold text-gray-50 text-5xl sm:text-7xl'>
           Blogs
         </div>
-        <div className="text-base sm:text-xl mt-2">
+        <div className='text-base sm:text-xl mt-2'>
           written by me or
-          <span className="text-yellow-rick-morty opacity-70"> collaborators*</span>
+          <span className='text-yellow-rick-morty opacity-70'> collaborators*</span>
         </div>
-        <div className="text-2xl mt-10">
+        <div className='text-2xl mt-10'>
           <p>
             Discover
-            <span className="font-medium text-yellow-rick-morty"> unique content </span>
+            <span className='font-medium text-yellow-rick-morty'> unique content </span>
             on differents topics. Are you gonna miss it?
           </p>
         </div>
-        <div className="flex flex-wrap gap-4 max-w-fit">
-          <Link to="/blog/fitness" className={linkStyle} target="_blank">
+        <div className='flex flex-wrap gap-4 max-w-fit'>
+          <Link to='/blog/fitness' className={linkStyle} target='_blank'>
             Fitness
           </Link>
-          <Link to="/blog/blockchain" className={linkStyle} target="_blank">
+          <Link to='/blog/blockchain' className={linkStyle} target='_blank'>
             Blockchain
           </Link>
         </div>
 
-        <footer className="text-yellow-rick-morty text-sm italic mt-10 opacity-70">
+        <footer className='text-yellow-rick-morty text-sm italic mt-10 opacity-70'>
           *If you'd like to collaborate, feels free to send me a pull request or
-          <a href="#contact" className="font-bold hover:opacity-90">
+          <a href='#contact' className='font-bold hover:opacity-90'>
             <span> contact </span>
           </a>
           with me in some way

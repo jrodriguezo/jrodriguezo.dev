@@ -4,9 +4,9 @@ import errorImageGif from './error404-not-found.gif'
 function ErrorGif () {
   return (
     <img
-      className="w-full opacity-30"
+      className='w-full opacity-30'
       src={errorImageGif}
-      alt="Error 404"
+      alt='Error 404'
     />
   )
 }

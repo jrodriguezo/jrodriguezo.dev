@@ -4,17 +4,17 @@ import { FaRegHeart } from 'react-icons/fa'
 
 function CoverPage () {
   return (
-    <div className="flex min-h-screen text-center bg-gradient-to-b from-yellow-rick-morty to-black">
-      <div className="m-auto">
-        <div className="font-extrabold text-5xl sm:text-7xl">Frontend Developer</div>
-        <div className="text-xl sm:text-3xl opacity-60">
+    <div className='flex min-h-screen text-center bg-gradient-to-b from-yellow-rick-morty to-black'>
+      <div className='m-auto'>
+        <div className='font-extrabold text-5xl sm:text-7xl'>Frontend Developer</div>
+        <div className='text-xl sm:text-3xl opacity-60'>
           <TypeAnimation
             cursor={true}
             sequence={['JavaScript revol ', 1000, 'JavaScript lover ']}
-            wrapper="p"
+            wrapper='p'
             repeat={1}
           />
-          <div className="flex justify-center mt-2">
+          <div className='flex justify-center mt-2'>
             <FaRegHeart size={60} />
           </div>
         </div>

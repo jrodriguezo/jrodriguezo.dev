@@ -13,10 +13,10 @@ export default function Header () {
 
   const routes = (
     <nav className='flex gap-6'>
-      <a className="hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl" href="#about">
+      <a className='hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl' href='#about'>
         About
       </a>
-      <a className="hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl" href="#blogs">
+      <a className='hover:opacity-50 transition ease-in duration-300 border-2 border-black-js rounded-lg px-2 text-xl sm:text-2xl' href='#blogs'>
         Blogs
       </a>
       {/* -- NOT AVAILABLE YET
@@ -33,12 +33,12 @@ export default function Header () {
         className={'flex flex-wrap p-5 sm:pt-5 items-center lg:px-56 text-3xl mx-auto justify-between'}
       >
         <Link
-          className="text-xl sm:text-2xl font-semibold hover:opacity-60"
-          to="/"
+          className='text-xl sm:text-2xl font-semibold hover:opacity-60'
+          to='/'
         >
-          <img src="personal_logo.png" className="h-10" alt="text about my name and first name" />
+          <img src='personal_logo.png' className='h-10' alt='text about my name and first name' />
         </Link>
-        <div className="block sm:hidden">
+        <div className='block sm:hidden'>
           {open ? <FaRegWindowClose onClick={handleClick} /> : <FaHamburger onClick={handleClick} />}
         </div>
         <div className={'hidden flex-col  sm:block sm:flex-row items-center'}>

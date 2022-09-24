@@ -35,17 +35,17 @@ function Projects () {
   ]
 
   return (
-    <div id="projects" className="bg-darkness h-5/6 py-20">
-      <div className="flex justify-center items-center flex-col sm:flex-row">
-        <div className="flex-auto text-center px-4">
-          <p className="font-extrabold text-7xl text-brown-rick-morty">
+    <div id='projects' className='bg-darkness h-5/6 py-20'>
+      <div className='flex justify-center items-center flex-col sm:flex-row'>
+        <div className='flex-auto text-center px-4'>
+          <p className='font-extrabold text-7xl text-brown-rick-morty'>
             Projects
           </p>
-          <div className="text-xl text-center mt-2 opacity-90">
+          <div className='text-xl text-center mt-2 opacity-90'>
             made in my free time
           </div>
-          <div className="relative wrap overflow-hidden p-10 h-full">
-            <div className="border-2-2 absolute border-opacity-20 border-brown-rick-morty h-full border left-1/2"></div>
+          <div className='relative wrap overflow-hidden p-10 h-full'>
+            <div className='border-2-2 absolute border-opacity-20 border-brown-rick-morty h-full border left-1/2'></div>
             {projectsData.map(
               ({ title, description, tags, code, deploy }, index) => {
                 return (
@@ -63,7 +63,7 @@ function Projects () {
               }
             )}
           </div>
-          <p className="mt-8">
+          <p className='mt-8'>
             This have not finished yet... Maybe, it's not updated
           </p>
         </div>
