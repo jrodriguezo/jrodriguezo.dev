@@ -38,7 +38,7 @@ function Slider () {
     }
   }, [index])
   return (
-    <section>
+    <section id='projects'>
       <div className='font-extrabold text-gray-50 text-5xl sm:text-7xl'>
           Projects
       </div>

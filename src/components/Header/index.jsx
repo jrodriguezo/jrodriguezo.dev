@@ -11,19 +11,19 @@ export default function Header () {
 
   const isVisible = open ? 'block' : 'hidden'
 
+  const anchorStyles = 'hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl'
+
   const routes = (
     <nav className='flex flex-col sm:flex-row gap-1 sm:gap-4'>
-      <a className='hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl' href='#about'>
+      <a className={anchorStyles} href='#about'>
         About
       </a>
-      <a className='hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl' href='#blogs'>
-        Blogs
-      </a>
-      {/* -- NOT AVAILABLE YET
-      <a className="hover:opacity-60 text-xl sm:text-2xl" href="#projects">
+      <a className={anchorStyles} href='#projects'>
         Projects
       </a>
-      */}
+      <a className={anchorStyles} href='#blogs'>
+        Blogs
+      </a>
     </nav>
   )
 
