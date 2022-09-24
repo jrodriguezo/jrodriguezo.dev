@@ -17,11 +17,12 @@ const strongPhraseStyles = 'font-medium text-gray-500'
 function AboutMe () {
   return (
     <div id='about'>
-      <div className='font-bold text-5xl sm:text-7xl mt-20 text-gray-50'>Jesús Rodríguez Ovejero</div>
-      <div className={`${strongPhraseStyles} text-xl sm:text-3xl mt-2 `}>
+      <div className='font-bold text-5xl max-w-xs sm:max-w-none sm:text-7xl mt-20 text-gray-50'>Jesús Rodríguez Ovejero</div>
+      <div className={`${strongPhraseStyles} max-w-sm sm:max-w-none text-3xl sm:text-5xl mt-2 `}>
         <span className='font-extralight text-gray-300'>
           +
           <CountUp
+            className='mr-2'
             end={countCodeYears(new Date(2021, 6, 1))}
             decimals={1}
             duration={2.3}
@@ -29,7 +30,7 @@ function AboutMe () {
             scrollSpyOnce
             delay={0.1}
           />
-          YEARS EXPERIENCE AS A FRONTEND DEVELOPER
+            years experience as FRONTEND DEVELOPER
         </span>
         <br />
       </div>
