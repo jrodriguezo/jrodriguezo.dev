@@ -47,7 +47,7 @@ function AboutMe () {
               obsessed with clean code, SOLID principles and best practices.</li>
                 <li className='mt-10'>If you got here but you didn't figure out anything, don't worry though. <span className='italic border-l-2 my-10 pl-6 border-gray-500 font-extralight block text-gray-300'> My job is about writing text using
               random English words and symbols in fancy colors, and the text is not even properly aligned to the left.</span>
-              Maybe you got a slight smile, I hope so. Memes and positive vibes with extra positive ingredient, are a must in my life.
+              Maybe you got a slight smile, I hope so. Memes and positive vibes are a must in my life.
                 </li>
               </ul>
             </div>
