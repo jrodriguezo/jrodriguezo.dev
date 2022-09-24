@@ -41,10 +41,10 @@ function AboutMe () {
             <div className='text-lg sm:text-2xl mt-5 mb-10'>
               <p>
                 I'm
-                <span className={`${strongPhraseStyles}`}>Telecommunications Engineer</span>
+                <span className={`${strongPhraseStyles}`}> Telecommunications Engineer </span>
                 specialized in
-                <span className={`${strongPhraseStyles}`}>Computer Science</span>. I've passionate about
-                <span className={`${strongPhraseStyles}`}>Frontend Development</span>
+                <span className={`${strongPhraseStyles}`}> Computer Science</span>. I've passionate about
+                <span className={`${strongPhraseStyles}`}> Frontend Development </span>
                 and that is what I do.
               </p>
             </div>
@@ -53,11 +53,11 @@ function AboutMe () {
               <ul>
                 <li>
                   I graduated from
-                  <span className={`${strongPhraseStyles}`}>Universidad Politécnica de Madrid</span>
-                  with a<span className={`${strongPhraseStyles}`}>B.S and M.S in Telecommunications Engineer</span>
+                  <span className={`${strongPhraseStyles}`}> Universidad Politécnica de Madrid </span>
+                  with a<span className={`${strongPhraseStyles}`}> B.S and M.S in Telecommunications Engineer </span>
                   both, specialized in
-                  <span className={`${strongPhraseStyles}`}>Computer Science</span>. I've passionate and dedicated to
-                  <span className={`${strongPhraseStyles}`}>Frontend Development</span>. In my free time, I try to be up
+                  <span className={`${strongPhraseStyles}`}> Computer Science</span>. I've passionate and dedicated to
+                  <span className={`${strongPhraseStyles}`}> Frontend Development</span>. In my free time, I try to be up
                   to date (even though it is impossible) but also, I'm addicted to improve with entusiasm every day. If
                   I would define what is the best part of coding is when it's made with love; obsessed with clean code,
                   SOLID principles and best practices.
