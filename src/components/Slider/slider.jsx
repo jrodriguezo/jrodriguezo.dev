@@ -1,6 +1,6 @@
 import React from 'react'
 
-const delay = 45000
+const delayBetweenSlides = 5000
 const colors = [
   {
     title: 'GitHub Finder',
@@ -31,7 +31,7 @@ function Slider () {
         setIndex((prevIndex) =>
           prevIndex === colors.length - 1 ? 0 : prevIndex + 1
         ),
-      delay
+      delayBetweenSlides
     )
     return () => {
       resetTimeout()
