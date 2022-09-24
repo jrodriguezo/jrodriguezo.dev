@@ -23,7 +23,7 @@ function AboutMe () {
         Jesús Rodríguez Ovejero
       </div>
       <div className={`${strongPhraseStyles} text-xl sm:text-3xl mt-2 `}>
-        <span className='font-extralight text-gray-300'>+<CountUp end={countCodeYears(new Date(2021, 6, 1))} decimals={1} duration={2.3} enableScrollSpy scrollSpyOnce delay={2} /> years experience as a Frontend Developer</span>
+        <span className='font-extralight text-gray-300'>+<CountUp end={countCodeYears(new Date(2021, 6, 1))} decimals={1} duration={2.3} enableScrollSpy scrollSpyOnce delay={0.1} /> years experience as a Frontend Developer</span>
         <br />
       </div>
       <div className="w-full pt-5 sm:pt-20">
