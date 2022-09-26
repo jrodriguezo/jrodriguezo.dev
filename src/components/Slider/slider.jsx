@@ -54,8 +54,8 @@ function Slider () {
       <div className='mx-auto overflow-hidden w-full mt-5 sm:mt-20'>
         <div className='whitespace-nowrap transition ease-linear duration-1000' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {slides.map((color, index) => (
-            <div className='inline-block sm:h-[400px] w-full bg-black-js' key={index}>
-              <div className='flex flex-col sm:flex-row justify-between h-screen'>
+            <div className='inline-block sm:h-[400px] w-full bg-black-js h-screen' key={index}>
+              <div className='flex flex-col sm:flex-row justify-between h-full'>
                 <div className='flex flex-col justify-between gap-8 px-4 pt-10 sm:p-10'>
                   <div className='flex flex-col flex-wrap gap-6 wrap break-words whitespace-normal'>
                     <header>
