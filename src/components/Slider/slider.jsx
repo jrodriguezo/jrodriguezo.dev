@@ -1,16 +1,22 @@
 import React from 'react'
 
 const delayBetweenSlides = 10 * 1000 // 10 * 1000ms = 10s
+const commonStyles = 'absolute shadow-md rounded-t-xl -bottom-20 sm:right-10 h-96 w-96 rotate-6 object-cover object-left-top'
 const colors = [
   {
     title: 'GitHub Finder',
     description: 'Search a GitHub user and find out stats about their profile. Find how many followers, public repositorios, location and many more.',
-    img: () => <img className='absolute shadow-violet-300 shadow-md rounded-t-xl -bottom-20 sm:right-10 h-96 w-96 rotate-6 object-cover object-left-top' src='./assets/images/github-finder.png' alt='github finder' />
+    img: () => <img className={`shadow-violet-300 ${commonStyles}`} src='./assets/images/projects/github-finder.png' alt='show a search input and some users with the name' />
   },
   {
     title: 'Hackaton Weather',
     description: 'Discover the weather through the search engine or using your current location. Access to the forecast history for the following 3 days. Keep track of the weather!',
-    img: () => <img className='absolute shadow-black shadow-md rounded-t-xl -bottom-20 sm:right-10 h-96 w-96 rotate-6 object-cover object-left-top' src='./assets/images/hackaton-weather.png' alt='github finder' />
+    img: () => <img className={`shadow-black ${commonStyles}`} src='./assets/images/projects/hackaton-weather.png' alt='show historical numbers' />
+  },
+  {
+    title: 'Foods 4 Bulking',
+    description: 'Make your daily routine. Control the macros of your diet automatically.',
+    img: () => <img className={`shadow-gray-100 ${commonStyles}`} src='./assets/images/projects/foods-4-bulking.png' alt='show rows and columns with ingredients and weights' />
   }
 ]
 function Slider () {
@@ -49,7 +55,7 @@ function Slider () {
         <div className='whitespace-nowrap transition ease-linear duration-1000' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {colors.map((color, index) => (
             <div className='inline-block sm:h-[400px] w-full bg-black-js' key={index}>
-              <div className='flex flex-col sm:flex-row justify-between h-full'>
+              <div className='flex flex-col sm:flex-row justify-between h-screen'>
                 <div className='flex flex-col justify-between gap-8 px-4 pt-10 sm:p-10'>
                   <div className='flex flex-col flex-wrap gap-6 wrap break-words whitespace-normal'>
                     <header>
