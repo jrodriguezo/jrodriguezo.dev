@@ -2,7 +2,7 @@ import React from 'react'
 
 const delayBetweenSlides = 10 * 1000 // 10 * 1000ms = 10s
 const commonStyles = 'absolute shadow-md rounded-t-xl -bottom-20 sm:right-10 h-96 w-96 rotate-6 object-cover object-left-top'
-const colors = [
+const slides = [
   {
     title: 'GitHub Finder',
     description: 'Search a GitHub user and find out stats about their profile. Find how many followers, public repositorios, location and many more.',
@@ -35,7 +35,7 @@ function Slider () {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === slides.length - 1 ? 0 : prevIndex + 1
         ),
       delayBetweenSlides
     )
@@ -53,7 +53,7 @@ function Slider () {
       </div>
       <div className='mx-auto overflow-hidden w-full mt-5 sm:mt-20'>
         <div className='whitespace-nowrap transition ease-linear duration-1000' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
-          {colors.map((color, index) => (
+          {slides.map((color, index) => (
             <div className='inline-block sm:h-[400px] w-full bg-black-js' key={index}>
               <div className='flex flex-col sm:flex-row justify-between h-screen'>
                 <div className='flex flex-col justify-between gap-8 px-4 pt-10 sm:p-10'>
@@ -78,7 +78,7 @@ function Slider () {
       </div>
       <div className='mt-10 flex justify-between items-center'>
         <div>
-          {colors.map((_, idx) => (
+          {slides.map((_, idx) => (
             <button key={`second ${idx}`} className={`inline-block h-3 w-3 rounded-full cursor-pointer mr-4 hover:bg-slate-300 ${index === idx ? 'bg-slate-500' : 'bg-slate-50'}`} onClick={() => {
               setIndex(idx)
               setIsPaused(false)
