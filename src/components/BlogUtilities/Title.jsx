@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Tittle ({ color = 'text-black', children }) {
+function Title ({ color = 'text-black', children }) {
   return (
     <div className={`font-extrabold text-5xl sm:text-7xl text-center ${color}`}>
       {children}
@@ -8,4 +8,4 @@ function Tittle ({ color = 'text-black', children }) {
   )
 }
 
-export default Tittle
+export default Title

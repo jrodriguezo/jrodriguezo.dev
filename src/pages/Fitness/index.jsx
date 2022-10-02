@@ -1,10 +1,10 @@
-import Tittle from 'components/BlogUtilities/Tittle'
+import Title from 'components/BlogUtilities/Title'
 
 export default function Fitness () {
   return (
     <section className='xl:px-56'>
       <div className='bg-gray-rick-morty p-20 text-black'>
-        <Tittle>Be the best version of you</Tittle>
+        <Title>Be the best version of you</Title>
         <div className='mx-auto w-20 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
           Why is so difficult to achive our goals?
