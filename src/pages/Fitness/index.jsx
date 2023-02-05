@@ -1,55 +1,55 @@
 import Title from 'components/BlogUtilities/Title'
+import Iframe from 'components/Iframe/Iframe'
+import Quote from 'components/Quote/Quote'
 
 export default function Fitness () {
   return (
     <section className='xl:px-56'>
-      <div className='bg-gray-rick-morty p-20 text-black'>
+      <div className='flex flex-col gap-y-5 w-full bg-gray-rick-morty p-20 text-black'>
         <Title>Be the best version of you</Title>
         <div className='mx-auto w-20 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
           Why is so difficult to achive our goals?
         </div>
-        <div className='mx-auto text-justify text-xl max-w-2xl my-10'>
-          Because it's difficult to get out from our comfort zone. We are all
+        <div className='flex flex-col gap-y-4 mx-auto text-justify text-xl max-w-2xl my-10'>
+          <p>Because it's difficult to get out from our comfort zone. We are all
           time giving excuses and we don't focus on the important things for
-          gainning muscle; train, sleep, eat and repeat. Moreover, the society
-          doesn't help too much due to "social activities", if you don't hang
-          out with your friends to take a beer it is considered like a "strange
-          person" or, you'll also listen to the phrase "you're obsessed with".
+          gainning muscle; train, sleep, eat and repeat.</p>
+          <p>
+          Moreover, most social activities are not very helpful; hang out with your friends,
+          going out for dinner, etc.</p>
         </div>
-        <div className='mx-auto max-w-3xl'>
-          <iframe
-            className='w-full aspect-video'
-            src='https://www.youtube.com/embed/-p1zwLg4T0I'
-            title='bulking'
-          ></iframe>
-        </div>
+        <Iframe src='https://www.youtube.com/embed/-p1zwLg4T0I' title='bulking diet motivation' />
         <div className='mx-auto w-20 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
             Not only our physical conditions is genetic
         </div>
         <div className='mx-auto text-justify text-xl max-w-2xl my-10'>
-            But also our suffering capacity or consistency should be taken into
-            consideration. Don't be fooled! We should be aware of our weaknesses
-            to fight against it with the final goal of achieving our best
-            version.
+            But our capacity for suffering or consistency must also be taken into
+            consideration. If you wanna be a mister Olympia, you have to do whatever it takes.
+            Achieving your best version requires pushing your body to the limit.
         </div>
-        <div className='mx-auto max-w-3xl'>
-          <iframe
-            className='w-full aspect-video'
-            src='https://www.youtube.com/embed/IGaN66dcZEs'
-            title='bulking'
-          ></iframe>
+        <Iframe src='https://www.youtube.com/embed/rqNjhkn9zjo' title='eating like a bodybuilder' />
+        <Quote title='Whatever it takes.'
+          author='Rich Piana'
+          role='Bodybuilder'
+        />
+        <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
+            There is no limits
         </div>
-        <div className='flex justify-center flex-col mx-auto text-center max-w-2xl'>
-          <span className='font-serif font-black text-8xl mt-10'>“</span>
-          <p className='font-light italic text-2xl'>
-              It’s that great feeling, like the first man on the moon, the first man to run a mile in under four minutes. And now, I’m the first to deadlift half a ton. It’s history, and I’m very proud to be a part of it.
-          </p>
-          <p className='text-2xl mt-4'>Eddie Hall</p>
-          <p>Strongman</p>
+        <Iframe src='https://www.youtube.com/embed/IGaN66dcZEs' title='deadlift with 500kg' />
+        <Quote title='It’s that great feeling, like the first man on the moon, the first man to run a mile in under four minutes. And now, I’m the first to deadlift half a ton. It’s history, and I’m very proud to be a part of it.'
+          author='Eddie Hall'
+          role='Strongman'
+        />
+        <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
+           Lifting heavy weight is addicting
         </div>
-
+        <Iframe src='https://www.youtube.com/embed/JaTKomJUNPM' title='addicted to lifting heavy weight' />
+        <Quote title="The more you wanna feel like the more discipline you can make yourself, I'll give up anything to like reach my goal."
+          author='Larry Wheels'
+          role='Powerlifting'
+        />
       </div>
     </section>
   )
