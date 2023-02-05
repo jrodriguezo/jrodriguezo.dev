@@ -20,7 +20,7 @@ export default function Fitness () {
           going out for dinner, etc.</p>
         </div>
         <Iframe src='https://www.youtube.com/embed/-p1zwLg4T0I' title='bulking diet motivation' />
-        <div className='mx-auto w-20 my-4 border-t-2 border-black'></div>
+        <div className='mx-auto w-10 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
             Not only our physical conditions is genetic
         </div>
@@ -34,6 +34,7 @@ export default function Fitness () {
           author='Rich Piana'
           role='Bodybuilder'
         />
+        <div className='mx-auto w-10 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
             There is no limits
         </div>
@@ -42,6 +43,7 @@ export default function Fitness () {
           author='Eddie Hall'
           role='Strongman'
         />
+        <div className='mx-auto w-10 my-4 border-t-2 border-black'></div>
         <div className='text-center font-bold text-4xl text-black-rick-morty tracking-widest'>
            Lifting heavy weight is addicting
         </div>
