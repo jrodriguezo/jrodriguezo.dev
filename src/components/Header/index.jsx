@@ -9,21 +9,32 @@ export default function Header () {
     setOpen((prevState) => !prevState)
   }
 
+  const ROUTES = [
+    {
+      name: 'About',
+      href: '#about'
+    },
+    {
+      name: 'Projects',
+      href: '#projects'
+    },
+    {
+      name: 'Blog',
+      href: '#about'
+    }
+  ]
+
   const isVisible = open ? 'block' : 'hidden'
 
-  const anchorStyles = 'hover:opacity-50 transition ease-in duration-300 px-2 text-xl sm:text-2xl'
-
   const routes = (
-    <nav className='flex flex-col sm:flex-row gap-1 sm:gap-4'>
-      <a className={anchorStyles} href='#about'>
-        About
-      </a>
-      <a className={anchorStyles} href='#projects'>
-        Projects
-      </a>
-      <a className={anchorStyles} href='#blogs'>
-        Blogs
-      </a>
+    <nav className='flex flex-col sm:flex-row'>
+      {ROUTES.map(({ name, href }) => {
+        return <a key={href} className='group transition-all duration-300 ease-in-out text-xl sm:text-2xl px-3 py-1 opacity-80 hover:opacity-100' href={href}>
+          <span className='pb-3 cursor-pointer bg-left-bottom bg-gradient-to-r from-black-js to-black-js bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
+            {name}
+          </span>
+        </a>
+      })}
     </nav>
   )
 
