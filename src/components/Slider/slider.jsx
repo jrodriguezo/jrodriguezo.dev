@@ -17,6 +17,11 @@ const slides = [
     title: 'Foods 4 Bulking',
     description: 'Make your daily routine. Control the macros of your diet automatically.',
     img: () => <img className={`shadow-gray-100 ${commonStyles}`} src='./assets/images/projects/foods-4-bulking.png' alt='show rows and columns with ingredients and weights' />
+  },
+  {
+    title: 'Newton Power',
+    description: 'Compare your strength with people around the world.',
+    img: () => <img className={`shadow-gray-100 ${commonStyles}`} src='./assets/images/projects/newton-power.png' alt='girl doing deadlift as background along with a ranking table' />
   }
 ]
 function Slider () {
