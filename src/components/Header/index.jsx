@@ -20,7 +20,7 @@ export default function Header () {
     },
     {
       name: 'Blog',
-      href: '#about'
+      href: '#blogs'
     }
   ]
 
