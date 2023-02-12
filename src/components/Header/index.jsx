@@ -11,6 +11,8 @@ export default function Header () {
     setOpen((prevState) => !prevState)
   }
 
+  const closeHeader = () => setOpen(false)
+
   const ROUTES = [
     {
       name: 'About',
@@ -28,7 +30,7 @@ export default function Header () {
 
   useEffect(() => {
     if (width > 640) {
-      setOpen(false)
+      closeHeader()
     }
   }, [width])
 
@@ -45,7 +47,7 @@ export default function Header () {
 
   const Routes = () => <nav className='flex flex-col sm:flex-row gap-8 sm:gap-0'>
     {ROUTES.map(({ name, href }) => {
-      return <a key={href} className={`group transition-all duration-300 ease-in-out sm:text-2xl px-3 py-1 opacity-80 hover:opacity-100 ${open ? 'text-[32px]' : 'text-xl'}`} href={href}>
+      return <a key={href} onClick={closeHeader} className={`group transition-all duration-300 ease-in-out sm:text-2xl px-3 py-1 opacity-80 hover:opacity-100 ${open ? 'text-[32px]' : 'text-xl'}`} href={href}>
         <span className={`pb-3 cursor-pointer bg-left-bottom bg-gradient-to-r ${open ? 'from-white to-white' : 'from-black-js to-black-js'} bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out`}>
           {name}
         </span>
