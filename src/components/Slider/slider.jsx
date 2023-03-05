@@ -11,6 +11,7 @@ const slides = [
   {
     title: 'Hackaton Weather',
     description: 'Discover the weather through the search engine or using your current location. Access to the forecast history for the following 3 days. Keep track of the weather!',
+    deploy: 'https://global-weather-web.netlify.app/',
     img: () => <img className={`shadow-black ${commonStyles}`} src='./assets/images/projects/hackaton-weather.png' alt='show historical numbers' />
   },
   {
@@ -21,6 +22,7 @@ const slides = [
   {
     title: 'Newton Power',
     description: 'Compare your strength with people around the world.',
+    deploy: 'https://newtonpower.netlify.app/',
     img: () => <img className={`shadow-gray-100 ${commonStyles}`} src='./assets/images/projects/newton-power.png' alt='girl doing deadlift as background along with a ranking table' />
   }
 ]
@@ -58,15 +60,18 @@ function Slider () {
       </div>
       <div className='mx-auto overflow-hidden w-full mt-5 sm:mt-20'>
         <div className='whitespace-nowrap transition ease-linear duration-1000' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
-          {slides.map((color, index) => (
+          {slides.map((project, index) => (
             <div className='inline-block sm:h-[400px] w-full bg-black-js h-screen' key={index}>
               <div className='flex flex-col sm:flex-row justify-between h-full'>
                 <div className='flex flex-col justify-between gap-8 px-4 pt-10 sm:p-10'>
                   <div className='flex flex-col flex-wrap gap-6 wrap break-words whitespace-normal'>
                     <header>
-                      <h1 className='font-bold text-3xl'>{color.title}</h1>
+                      <h1 className='font-bold text-3xl'>{project.title}</h1>
                     </header>
-                    <p className='max-w-xs'>{color.description}</p>
+                    <p className='max-w-xs'>{project.description}</p>
+                    {project?.deploy && <footer className='flex'>
+                      <a target='_blank' rel='noopener noreferrer' href={project.deploy} className='bg-green-rick-morty animate-bounce transition-all duration-300 text-black-js font-bold py-2 px-4 rounded-lg text-center hover:opacity-70'>Demo</a>
+                    </footer>}
                   </div>
                   <footer className='flex flex-col opacity-70'>
                     Read more
@@ -74,7 +79,7 @@ function Slider () {
                   </footer>
                 </div>
                 <picture className='relative h-96 w-96 rotate-10'>
-                  {color.img()}
+                  {project.img()}
                 </picture>
               </div>
             </div>
