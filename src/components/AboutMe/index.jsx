@@ -17,26 +17,32 @@ const strongPhraseStyles = 'font-medium text-gray-500'
 function AboutMe () {
   return (
     <div id='about'>
-      <div className='font-bold text-5xl max-w-xs sm:max-w-none sm:text-7xl mt-20 text-gray-50'>Jesús Rodríguez Ovejero</div>
-      <div className={`${strongPhraseStyles} max-w-sm sm:max-w-none text-3xl sm:text-5xl mt-2 `}>
-        <span className='font-extralight text-gray-300'>
+      <header className='flex lg:flex-row flex-col justify-between items-center gap-8'>
+        <div>
+          <div className='font-bold text-5xl max-w-xs sm:max-w-none sm:text-7xl mt-20 text-gray-50'>Jesús Rodríguez Ovejero</div>
+          <div className={`${strongPhraseStyles} text-3xl sm:text-5xl mt-2 `}>
+            <span className='font-extralight text-gray-300 leading-tight'>
           +
-          <CountUp
-            className='mr-2'
-            end={countCodeYears(new Date(2021, 6, 1))}
-            decimals={1}
-            duration={2.3}
-            enableScrollSpy
-            scrollSpyOnce
-            delay={0.1}
-          />
-            years of experience as FRONTEND DEVELOPER
-        </span>
-        <br />
-      </div>
+              <CountUp
+                className='mr-2'
+                end={countCodeYears(new Date(2021, 6, 1))}
+                decimals={1}
+                duration={2.3}
+                enableScrollSpy
+                scrollSpyOnce
+                delay={0.1}
+              />
+            years of experience as <span className='inline-block font-extrabold text-yellow-rick-morty'>FRONTEND DEVELOPER</span>
+            </span>
+          </div>
+        </div>
+        <figure className='max-w-[350px]'>
+          <img src='./assets/images/jesus-profile.png' alt='show historical numbers' />
+        </figure>
+      </header>
       <div className='w-full pt-5 sm:pt-20'>
         <div id='about' className='flex'>
-          <div className='max-w-5xl xl:rounded-xl 2xl:mr-10'>
+          <div className='xl:rounded-xl max-w-[128ch]'>
             <div className='font-semibold text-gray-50 text-lg sm:text-2xl'>Short, 1st person</div>
             <div className='text-lg sm:text-2xl mt-5 mb-10'>
               <p>
