@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 12px;
+  gap: 12px;
+  border: 1px solid white;
+  list-style: none;
+  backdrop-filter: blur(2px);
+}
+
+.container li {
+  position: relative;
+}
+
+.container li::before {
+  width: 0;
+  left: 0;
+}
+
+.container li:hover::before{
+  content: '';
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  inset: 0;
+  transition: width 1000ms linear;
+}
+
+
