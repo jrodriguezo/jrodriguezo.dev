@@ -1,0 +1,11 @@
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.police_station {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
