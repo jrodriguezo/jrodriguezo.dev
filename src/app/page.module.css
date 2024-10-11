@@ -1,109 +1,11 @@
-.stats{
-  min-height: 100vh;
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
-}
-
-.stats h1 {
-  background: #FFFFFF;
-  background: linear-gradient(to right, #FFFFFF 0%, #2575FC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.stats::after{
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: 20%;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 70vh;
-  transform: rotate(-45deg);
-  width: 400px;
-  opacity: 0.5;
-  background-image: linear-gradient(to right, #000 10%, #2575fc 100%);    
-  filter: blur(45px);
-}
-
-.wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main {
+  height: 100vh;
   position: relative;
-  margin-top: 100vh;
-  min-height: 100vh;
-  background-color: #000;
 }
 
-.content{
+.police_station {
   position: absolute;
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: 50%;
-}
-
-.secondContent{
-  margin-top: 100vh;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
+  inset: 0;
+  height: 100%;
   width: 100%;
 }
-
-
-.navbar{
-  position: absolute;
-  top: -57.5px;
-  width: 100%;
-  height: calc(12px * 4 + 19.5px);
-  background-color: #000;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.navbar.entire{
-  /* background-color: transparent; */
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-.rocket,
-.smoke {
-  position: absolute;
-  bottom: 70px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  height: 150px;
-  width: auto;
-  object-fit: contain;
-}
-
-
-
-.smoke{
-  bottom: 10px;
-  width: 0; 
-  height: 0; 
-  z-index: -1;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  
-  border-top: 60px solid #f00;
-  filter: blur(10px);
-}
-
-

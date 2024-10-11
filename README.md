@@ -8,3 +8,11 @@ This is my personal web where it includes some information about me and there is
 - Use tailwindCSS
 - Upgraded to React 18 (04/17/2022)
 - CI/CD pipeline with Netlify and GitHub (master branch)
+
+## How to
+
+- Add a new model
+
+```
+npx gltfjsx public/models/police_wiggum.gltf
+```
