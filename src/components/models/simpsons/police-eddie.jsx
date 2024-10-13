@@ -14,7 +14,7 @@ const PoliceEddie = (props) => {
   const scroll = useScroll()
 
   useEffect(() => {
-    console.log({actions, names})
+    // console.log({actions, names})
     actions[names[0]].play().paused = true
     // actions[names[0]].reset().fadeIn(0.5).play();
     return () => {
@@ -25,7 +25,7 @@ const PoliceEddie = (props) => {
   const tl = useRef();
 
   useFrame((frame) => {
-    console.log(    actions[names[0]], actions[names[0]].getClip().duration, scroll.offset)
+    // console.log(    actions[names[0]], actions[names[0]].getClip().duration, scroll.offset)
     actions[names[0]].time = (actions[names[0]].getClip().duration * scroll.offset) / 1
     group.current.position.z = scroll.offset * 5; 
     // tl.current.seek(scroll.offset * tl.current.duration());
