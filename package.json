@@ -16,6 +16,7 @@
     "gsap": "^3.12.5",
     "next": "latest",
     "react": "latest",
+    "react-countup": "^6.5.3",
     "react-dom": "latest",
     "three": "0.163.0"
   },

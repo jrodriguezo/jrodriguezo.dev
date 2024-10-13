@@ -1,11 +1,36 @@
 .main {
-  height: 100vh;
   position: relative;
+  height: 100vh;
+  background-color: #5c5470;
 }
 
-.police_station {
+.overlay {
   position: absolute;
-  inset: 0;
-  height: 100%;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: var(--scrollbar-width);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content {
+  padding: 20px;
+  max-width: 500px;
+}
+
+.first-color {
+  background: #dbd8e3;
+}
+
+.second-color {
+  background: #5c5470;
+}
+
+.third-color {
+  background: #352f44;
+}
+
+.fourth-color {
+  background: #2a2438;
 }

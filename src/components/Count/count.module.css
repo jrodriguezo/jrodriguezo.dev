@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.operator {
+  padding-right: 0.1rem;
+}
+
+.afterText {
+  margin-left: 0.3rem;
+}
