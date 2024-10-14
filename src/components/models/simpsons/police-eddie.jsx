@@ -18,7 +18,7 @@ const PoliceEddie = (props) => {
     actions[names[0]].play().paused = true
     // actions[names[0]].reset().fadeIn(0.5).play();
     return () => {
-     // actions[names[0]].fadeOut(0.5)
+      // actions[names[0]].fadeOut(0.5)
     };
   }, []);
 
@@ -31,6 +31,7 @@ const PoliceEddie = (props) => {
     // tl.current.seek(scroll.offset * tl.current.duration());
   });
 
+  /*
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
 
@@ -42,6 +43,7 @@ const PoliceEddie = (props) => {
       10
     );
 },[])
+*/
 
   
   
