@@ -3,12 +3,13 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import dynamic from "next/dynamic";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import PoliceEddie from "../components/models/simpsons/police-eddie";
 import {
   OrbitControls,
   PerspectiveCamera,
   ScrollControls,
+  useScroll,
 } from "@react-three/drei";
 import { MathUtils } from "three";
 import { useRef } from "react";
@@ -26,16 +27,14 @@ const CameraControls = () => {
   const { camera } = useThree();
 
   // This will run on every frame
-  /*
   useFrame(() => {
     if (controlsRef.current) {
       console.log(`Camera Position: ${JSON.stringify(camera.position)}`);
       console.log(`Camera Rotation: ${JSON.stringify(camera.rotation)}`);
     }
   });
-  */
 
-  return <OrbitControls ref={controlsRef} makeDefault enableZoom={false} />;
+  return <OrbitControls ref={controlsRef} makeDefault enableZoom={true} />;
 };
 
 const Overlay = ({ children }: any) => {
@@ -50,6 +49,18 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
+        <div className={styles.marquee}>
+          <div className={styles["ticker-wrap"]}>
+            <div className={styles["ticker"]}>
+              <span className={styles["item-collection-1"]}>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+              </span>
+            </div>
+          </div>
+        </div>
         <Overlay>
           <h1 className={styles.title}>Jesús Rodríguez Ovejero</h1>
           <h2>
@@ -83,10 +94,9 @@ export default function Home() {
           <PerspectiveCamera
             makeDefault
             fov={60}
-            position={[3.84, 0.44, 3.6]}
-            rotation={[-0.12, 0.81, 0.08]}
+            position={[13.72, 1.0, 2.57]}
+            rotation={[-0.37, 1.37, 0.36]}
           />
-          {/* <CameraControls /> */}
           <ambientLight />
           <directionalLight
             position={[-5, 5, 5]}
@@ -96,7 +106,7 @@ export default function Home() {
           />
 
           <ScrollControls damping={0.5} pages={3}>
-            <PoliceEddie position={[0, -1.5, 0]} />
+            <PoliceEddie position={[10, -2, 0]} />
           </ScrollControls>
         </Canvas>
       </main>
