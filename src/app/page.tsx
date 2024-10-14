@@ -68,6 +68,20 @@ export default function Home() {
           </div>
         </div>
         <Overlay>
+          <div className={styles["poster"]}>
+            <h1>WANTED</h1>
+            <p className={styles["subheading"]}>Dead or Alive</p>
+            <div
+              className={styles["mugshot"]}
+              role="img"
+              aria-label="mugshot-img"
+            ></div>
+            <p className={styles["name"]}>Jesús Rodríguez Ovejero</p>
+            <em>Armed & very dangerous</em>
+            <h2>Reward</h2>
+            <u>$Frontend Developer</u>
+          </div>
+          {/* 
           <h1 className={styles.title}>Jesús Rodríguez Ovejero</h1>
           <h2>
             <Count
@@ -95,6 +109,7 @@ export default function Home() {
             countUp={{ end: 8, decimals: 0 }}
             afterText="Satisfied students"
           />
+          */}
         </Overlay>
         <Canvas>
           <PerspectiveCamera
