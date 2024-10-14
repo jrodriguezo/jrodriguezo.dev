@@ -70,16 +70,16 @@ export default function Home() {
         <Overlay>
           <div className={styles["poster"]}>
             <h1>WANTED</h1>
-            <p className={styles["subheading"]}>Dead or Alive</p>
+            <p className={styles["subheading"]}>
+              DEAD <span>OR</span> ALIVE
+            </p>
             <div
               className={styles["mugshot"]}
               role="img"
               aria-label="mugshot-img"
             ></div>
-            <p className={styles["name"]}>Jesús Rodríguez Ovejero</p>
-            <em>Armed & very dangerous</em>
-            <h2>Reward</h2>
-            <u>$Frontend Developer</u>
+            <h2>REWARD</h2>
+            <p>Frontend Developer</p>
           </div>
           {/* 
           <h1 className={styles.title}>Jesús Rodríguez Ovejero</h1>
@@ -131,7 +131,7 @@ export default function Home() {
           </ScrollControls>
         </Canvas>
       </main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           className={styles.link}
           href="mailto:jrodriguezo.developer@gmail.com"
@@ -183,7 +183,7 @@ export default function Home() {
           </svg>
           <span>GitHub</span>
         </a>
-      </footer>
+      </footer> */}
     </>
   );
 }

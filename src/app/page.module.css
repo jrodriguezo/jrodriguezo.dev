@@ -2,7 +2,12 @@
   position: relative;
   height: 100vh;
   background-color: #5c5470;
-  background-image: url("https://dimmageiras.github.io/101-computing-wanted-poster-css-task/images/wood.jpg");
+  background: rgb(56, 56, 58);
+  background: radial-gradient(
+    circle,
+    rgba(56, 56, 58, 1) 0%,
+    rgba(25, 23, 27, 1) 100%
+  );
   background-repeat: repeat;
   background-size: cover;
   color: #291200;
@@ -70,6 +75,13 @@
   right: 0;
 }
 
+.marquee2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+
 .ticker-wrap {
   width: 100%;
   height: 80px;
@@ -128,24 +140,33 @@
 }
 
 .poster {
-  background-image: url("https://dimmageiras.github.io/101-computing-wanted-poster-css-task/images/parchment.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0.125rem 0.25rem 0.5rem 0.1875rem #000;
   box-sizing: border-box;
   height: 38.75rem;
   margin: 1.2rem auto;
   padding-top: 1.7rem;
   text-align: center;
-  width: 30rem;
   font-family: "Ultra", serif;
+  color: white;
 }
 
-.poster h1 {
-  font-family: "Ewert", cursive;
+.poster h1,
+.poster h2 {
   font-size: 3.6666694383206rem;
   font-weight: normal;
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.poster h2 {
+  border-bottom: none;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
 .poster u {
@@ -155,8 +176,19 @@
 }
 
 .subheading {
-  font-size: 1.34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
   margin: 1rem auto 0.48rem auto;
+  margin-top: 0.5rem;
+}
+
+.subheading span {
+  font-size: 1rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .mugshot {
@@ -170,7 +202,7 @@
   height: 14.1rem;
   opacity: 0.9;
   padding: 0.625rem;
-  width: 17.5rem;
+  width: 14.1rem;
 }
 
 .name {
