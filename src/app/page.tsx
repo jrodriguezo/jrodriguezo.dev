@@ -58,6 +58,12 @@ export default function Home() {
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
               </span>
+              <span className={styles["item-collection-2"]}>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+              </span>
             </div>
           </div>
         </div>
