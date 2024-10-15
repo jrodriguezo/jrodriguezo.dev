@@ -49,21 +49,24 @@ const Overlay = ({ children }: any) => {
 export default function Home() {
   const [scrollEddie, setScrollEddie] = useState(0);
 
-  console.log(scrollEddie);
-
   return (
     <>
       <main className={styles.main}>
         <div className={styles.marquee}>
           <div className={styles["ticker-wrap"]}>
-            <div className={styles["ticker"]}>
+            <div
+              className={styles["ticker"]}
+              style={{ transform: `translateX(${scrollEddie * 10}%)` }}
+            >
               <span className={styles["item-collection-1"]}>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
-              </span>
-              <span className={styles["item-collection-2"]}>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
+                <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>

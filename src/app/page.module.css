@@ -96,13 +96,11 @@
 .ticker {
   display: inline-block;
   margin-top: 5px;
-  animation: marquee 50s linear infinite;
 }
 
 .item-collection-1 {
   position: relative;
-  left: 0%;
-  animation: swap 50s linear infinite;
+  left: -50%;
 }
 
 .item {
