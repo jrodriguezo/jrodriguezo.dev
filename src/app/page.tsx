@@ -13,7 +13,7 @@ import {
   useScroll,
 } from "@react-three/drei";
 import { MathUtils } from "three";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getDevelopingYears } from "@/utils/experience";
 import Count from "@/components/Count/count";
 
@@ -50,6 +50,21 @@ export default function Home() {
   const [scrollEddie, setScrollEddie] = useState(0);
   const initialPositionEddie = [10, -2, 0];
   const [positionEddie, setPositionEddie] = useState(initialPositionEddie);
+  /*
+  const divRef = useRef(null);
+
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const { offsetTop } = divRef.current || { offsetTop: null };
+
+    if (window.document.body.scrollTop > offsetTop) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  }, [scrollEddie]);
+  */
 
   return (
     <>
@@ -92,6 +107,7 @@ export default function Home() {
             <p className={styles["subheading"]}>
               DEAD <span>OR</span> ALIVE
             </p>
+
             <div
               className={styles["mugshot"]}
               role="img"
@@ -153,7 +169,37 @@ export default function Home() {
             />
           </ScrollControls>
         </Canvas>
-        <section className={styles.about}></section>
+        <div className={styles.about}>
+          <div className={styles.content}>
+            <h2 className={styles.title}>Who Am I?</h2>
+            <p className={styles.experience}>
+              <Count
+                countUp={{ end: getDevelopingYears(new Date(2021, 6, 1)) }}
+                afterText="years of experience as"
+              />
+              <span>Frontend Developer</span>
+            </p>
+            <p className={styles["about-me"]}>
+              I graduated from Universidad Politécnica de Madrid with a B.S and
+              M.S in Telecommunications Engineer both, specialized in Computer
+              Science.
+            </p>
+            <Count countUp={{ end: 6, decimals: 0 }} afterText="B2C projects" />
+            <Count
+              countUp={{ end: 1, decimals: 0 }}
+              afterText="Freelance project"
+            />
+            <p>
+              I collaborate with vocational training and university students,
+              helping them unlock their potential in the software sector by
+              providing tailored support and guidance.
+            </p>
+            <Count
+              countUp={{ end: 8, decimals: 0 }}
+              afterText="Satisfied students"
+            />
+          </div>
+        </div>
       </main>
       {/* <footer className={styles.footer}>
         <a
