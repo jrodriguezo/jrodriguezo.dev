@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import classNames from "classnames";
 
 import dynamic from "next/dynamic";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
@@ -12,7 +13,7 @@ import {
   useScroll,
 } from "@react-three/drei";
 import { MathUtils } from "three";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { getDevelopingYears } from "@/utils/experience";
 import Count from "@/components/Count/count";
 
@@ -46,6 +47,10 @@ const Overlay = ({ children }: any) => {
 };
 
 export default function Home() {
+  const [scrollEddie, setScrollEddie] = useState(0);
+
+  console.log(scrollEddie);
+
   return (
     <>
       <main className={styles.main}>
@@ -127,7 +132,7 @@ export default function Home() {
           />
 
           <ScrollControls damping={0.5} pages={3}>
-            <PoliceEddie position={[10, -2, 0]} />
+            <PoliceEddie handleScroll={setScrollEddie} position={[10, -2, 0]} />
           </ScrollControls>
         </Canvas>
       </main>
