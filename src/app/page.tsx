@@ -56,7 +56,7 @@ export default function Home() {
           <div className={styles["ticker-wrap"]}>
             <div
               className={styles["ticker"]}
-              style={{ transform: `translateX(${scrollEddie * 10}%)` }}
+              style={{ transform: `translateX(${scrollEddie * 20}%)` }}
             >
               <span className={styles["item-collection-1"]}>
                 <span className={styles["item"]}>POLICE LINE DO NOT CROSS</span>
