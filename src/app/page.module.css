@@ -205,3 +205,28 @@
   font-size: 2rem;
   margin: 0.7rem;
 }
+
+.comicBox {
+  position: absolute;
+  color: black;
+  right: 20rem;
+  top: 14rem;
+  border: 1px solid white;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: 2px solid #666;
+  border-radius: 4px;
+  border-radius: 100%;
+}
+
+.comicBox::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 70%;
+  transform: rotate(60deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  background-color: #fff;
+}

@@ -6,7 +6,7 @@ import gsap from 'gsap'
 
 const PoliceEddie = (props) => {
   const group = React.useRef()
-  const { handleScroll } = props
+  const { handleScroll, handlePosition } = props
   const { scene, animations } = useGLTF('/models/police_eddie/scene.gltf')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
@@ -31,6 +31,7 @@ const PoliceEddie = (props) => {
     actions[names[0]].time = (actions[names[0]].getClip().duration * scroll.offset) / 1
     group.current.position.z = scroll.offset * 5; 
     handleScroll(scroll.offset)
+    handlePosition(group.current.position)
     // tl.current.seek(scroll.offset * tl.current.duration());
   });
 

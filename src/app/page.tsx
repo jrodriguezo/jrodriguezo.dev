@@ -48,10 +48,21 @@ const Overlay = ({ children }: any) => {
 
 export default function Home() {
   const [scrollEddie, setScrollEddie] = useState(0);
+  const initialPositionEddie = [10, -2, 0];
+  const [positionEddie, setPositionEddie] = useState(initialPositionEddie);
 
   return (
     <>
       <main className={styles.main}>
+        <div
+          className={styles.comicBox}
+          style={{
+            transform: `translateX(${scrollEddie * -550}%)`,
+            opacity: 1 - scrollEddie * 8,
+          }}
+        >
+          <p>Keep scrolling!</p>
+        </div>
         <div className={styles.marquee}>
           <div className={styles["ticker-wrap"]}>
             <div
@@ -135,9 +146,14 @@ export default function Home() {
           />
 
           <ScrollControls damping={0.5} pages={3}>
-            <PoliceEddie handleScroll={setScrollEddie} position={[10, -2, 0]} />
+            <PoliceEddie
+              handlePosition={setPositionEddie}
+              handleScroll={setScrollEddie}
+              position={initialPositionEddie}
+            />
           </ScrollControls>
         </Canvas>
+        <section className={styles.about}></section>
       </main>
       {/* <footer className={styles.footer}>
         <a
