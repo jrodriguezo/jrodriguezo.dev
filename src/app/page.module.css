@@ -5,8 +5,8 @@
   background: rgb(56, 56, 58);
   background: radial-gradient(
     circle,
-    rgba(56, 56, 58, 1) 0%,
-    rgba(25, 23, 27, 1) 100%
+    rgba(56, 56, 58, 1) 10%,
+    rgba(25, 23, 27, 1) 40%
   );
   background-repeat: repeat;
   background-size: cover;
