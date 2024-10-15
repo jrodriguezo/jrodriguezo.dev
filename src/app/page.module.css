@@ -90,17 +90,16 @@
   white-space: nowrap;
   position: fixed;
   bottom: 0;
-  height: 3.5rem;
-  background-color: #b7b62c;
 }
 .ticker {
   display: inline-block;
   margin-top: 5px;
+  background-color: #b7b62c;
+  padding: 0.2rem;
 }
 
 .item-collection-1 {
   position: relative;
-  left: -50%;
 }
 
 .item {
