@@ -230,22 +230,3 @@
   border-bottom: 2px solid #666;
   background-color: #fff;
 }
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
-  height: 100%;
-  background: rgba(25, 23, 27, 1);
-  color: white;
-}
-
-.main h2 {
-  font-family: "Ultra", serif;
-  font-size: 3.6666694383206rem;
-  font-weight: normal;
-  width: fit-content;
-  margin: 0 auto;
-}

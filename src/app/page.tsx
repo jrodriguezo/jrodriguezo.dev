@@ -15,7 +15,7 @@ import {
 import { MathUtils } from "three";
 import { useEffect, useRef, useState } from "react";
 import { getDevelopingYears } from "@/utils/experience";
-import Count from "@/components/Count/count";
+import Bio from "@/pages/bio/bio";
 
 /*
 const Scene = dynamic(() => import("@/components/ThreeJS/Scene"), {
@@ -169,37 +169,7 @@ export default function Home() {
             />
           </ScrollControls>
         </Canvas>
-        <div className={styles.about}>
-          <div className={styles.content}>
-            <h2 className={styles.title}>Who Am I?</h2>
-            <p className={styles.experience}>
-              <Count
-                countUp={{ end: getDevelopingYears(new Date(2021, 6, 1)) }}
-                afterText="years of experience as"
-              />
-              <span>Frontend Developer</span>
-            </p>
-            <p className={styles["about-me"]}>
-              I graduated from Universidad Politécnica de Madrid with a B.S and
-              M.S in Telecommunications Engineer both, specialized in Computer
-              Science.
-            </p>
-            <Count countUp={{ end: 6, decimals: 0 }} afterText="B2C projects" />
-            <Count
-              countUp={{ end: 1, decimals: 0 }}
-              afterText="Freelance project"
-            />
-            <p>
-              I collaborate with vocational training and university students,
-              helping them unlock their potential in the software sector by
-              providing tailored support and guidance.
-            </p>
-            <Count
-              countUp={{ end: 8, decimals: 0 }}
-              afterText="Satisfied students"
-            />
-          </div>
-        </div>
+        <Bio />
       </main>
       {/* <footer className={styles.footer}>
         <a
